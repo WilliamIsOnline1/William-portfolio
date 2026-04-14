@@ -1,16 +1,33 @@
 import React from 'react';
 
-const About = ({ content }) => {
+const About = ({ content, personalData }) => {
   return (
-    <section id="about" className="py-20" style={{ backgroundColor: '#ffffff' }}>
+    <section id="about" className="py-24 relative" style={{ backgroundColor: '#F5F5F5' }}>
+      <div className="absolute top-6 left-1/2 transform -translate-x-1/2 flex items-center gap-2 opacity-40">
+        <img
+          src={personalData.image}
+          alt={personalData.name}
+          className="w-6 h-6 rounded-full object-cover"
+        />
+        <span className="text-xs" style={{ color: '#2A2A2E', fontFamily: 'Inter, sans-serif' }}>
+          {personalData.name}
+        </span>
+      </div>
+
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-8 text-center" style={{ color: '#1F2933', fontFamily: 'Merriweather, serif' }}>
+          <h2
+            className="text-5xl font-bold mb-6 text-center transition-all duration-500"
+            style={{ color: '#2A2A2E', fontFamily: 'Merriweather, serif' }}
+          >
             About Me
           </h2>
-          <div className="w-20 h-1 mx-auto mb-12" style={{ backgroundColor: '#7C9A92' }}></div>
+          <div className="w-24 h-0.5 mx-auto mb-12 transition-all duration-500" style={{ backgroundColor: '#8B9D83' }}></div>
           
-          <p className="text-lg leading-relaxed" style={{ color: '#1F2933', fontFamily: 'Inter, sans-serif' }}>
+          <p
+            className="text-lg leading-relaxed text-center transition-all duration-500"
+            style={{ color: '#4A4A4A', fontFamily: 'Inter, sans-serif', lineHeight: '1.8' }}
+          >
             {content}
           </p>
         </div>

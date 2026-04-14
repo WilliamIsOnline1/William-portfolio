@@ -1,167 +1,83 @@
-import React, { useState } from 'react';
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import React from 'react';
+import { Mail, MapPin, Phone } from 'lucide-react';
 import { Card } from './ui/card';
-import { Button } from './ui/button';
-import { Input } from './ui/input';
-import { Textarea } from './ui/textarea';
-import { useToast } from '../hooks/use-toast';
 
 const Contact = ({ personalInfo }) => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Mock submission - will be replaced with actual API call
-    setTimeout(() => {
-      toast({
-        title: "Message Sent!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
-      });
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      setIsSubmitting(false);
-    }, 1000);
-  };
-
   return (
-    <section id="contact" className="py-20" style={{ backgroundColor: '#ffffff' }}>
+    <section id="contact" className="py-24 relative" style={{ backgroundColor: '#F5F5F5' }}>
+      <div className="absolute top-6 left-1/2 transform -translate-x-1/2 flex items-center gap-2 opacity-40">
+        <img
+          src={personalInfo.image}
+          alt={personalInfo.name}
+          className="w-6 h-6 rounded-full object-cover"
+        />
+        <span className="text-xs" style={{ color: '#2A2A2E', fontFamily: 'Inter, sans-serif' }}>
+          {personalInfo.name}
+        </span>
+      </div>
+
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-8 text-center" style={{ color: '#1F2933', fontFamily: 'Merriweather, serif' }}>
+          <h2 className="text-5xl font-bold mb-6 text-center transition-all duration-500" style={{ color: '#2A2A2E', fontFamily: 'Merriweather, serif' }}>
             Get In Touch
           </h2>
-          <div className="w-20 h-1 mx-auto mb-12" style={{ backgroundColor: '#7C9A92' }}></div>
+          <div className="w-24 h-0.5 mx-auto mb-12 transition-all duration-500" style={{ backgroundColor: '#8B9D83' }}></div>
           
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Contact Info */}
-            <div>
-              <h3 className="text-2xl font-bold mb-6" style={{ color: '#1F2933', fontFamily: 'Merriweather, serif' }}>
-                Contact Information
-              </h3>
-              
-              <div className="space-y-4">
-                <Card className="p-4 transition-all duration-300 hover:shadow-lg">
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-lg" style={{ backgroundColor: '#7C9A92' }}>
-                      <Mail size={20} color="#F8FAFC" />
-                    </div>
-                    <div>
-                      <p className="text-sm" style={{ color: '#7C9A92' }}>Email</p>
-                      <p className="font-medium" style={{ color: '#1F2933' }}>{personalInfo.email}</p>
-                    </div>
-                  </div>
-                </Card>
-                
-                <Card className="p-4 transition-all duration-300 hover:shadow-lg">
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-lg" style={{ backgroundColor: '#7C9A92' }}>
-                      <Phone size={20} color="#F8FAFC" />
-                    </div>
-                    <div>
-                      <p className="text-sm" style={{ color: '#7C9A92' }}>Phone</p>
-                      <p className="font-medium" style={{ color: '#1F2933' }}>{personalInfo.phone}</p>
-                    </div>
-                  </div>
-                </Card>
-                
-                <Card className="p-4 transition-all duration-300 hover:shadow-lg">
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-lg" style={{ backgroundColor: '#7C9A92' }}>
-                      <MapPin size={20} color="#F8FAFC" />
-                    </div>
-                    <div>
-                      <p className="text-sm" style={{ color: '#7C9A92' }}>Location</p>
-                      <p className="font-medium" style={{ color: '#1F2933' }}>{personalInfo.location}</p>
-                    </div>
-                  </div>
-                </Card>
-              </div>
-            </div>
+          <div className="max-w-2xl mx-auto">
+            <p className="text-center text-lg mb-8" style={{ color: '#4A4A4A', fontFamily: 'Inter, sans-serif' }}>
+              I'd love to hear from you. Feel free to reach out through any of the following channels.
+            </p>
             
-            {/* Contact Form */}
-            <div>
-              <h3 className="text-2xl font-bold mb-6" style={{ color: '#1F2933', fontFamily: 'Merriweather, serif' }}>
-                Send a Message
-              </h3>
+            <div className="space-y-4">
+              <Card className="p-6 transition-all duration-500 hover:shadow-xl" style={{ backgroundColor: '#FFFFFF' }}>
+                <div className="flex items-center gap-4">
+                  <div className="p-3 rounded-lg" style={{ backgroundColor: '#8B9D83' }}>
+                    <Mail size={24} color="#FFFFFF" />
+                  </div>
+                  <div>
+                    <p className="text-sm mb-1" style={{ color: '#8B9D83', fontFamily: 'Inter, sans-serif' }}>Email</p>
+                    <a
+                      href={`mailto:${personalInfo.email}`}
+                      className="font-medium text-lg transition-all duration-300 hover:opacity-70"
+                      style={{ color: '#2A2A2E' }}
+                    >
+                      {personalInfo.email}
+                    </a>
+                  </div>
+                </div>
+              </Card>
               
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <Input
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full"
-                    style={{ borderColor: '#7C9A92' }}
-                  />
+              <Card className="p-6 transition-all duration-500 hover:shadow-xl" style={{ backgroundColor: '#FFFFFF' }}>
+                <div className="flex items-center gap-4">
+                  <div className="p-3 rounded-lg" style={{ backgroundColor: '#8B9D83' }}>
+                    <Phone size={24} color="#FFFFFF" />
+                  </div>
+                  <div>
+                    <p className="text-sm mb-1" style={{ color: '#8B9D83', fontFamily: 'Inter, sans-serif' }}>Phone</p>
+                    <a
+                      href={`tel:${personalInfo.phone}`}
+                      className="font-medium text-lg transition-all duration-300 hover:opacity-70"
+                      style={{ color: '#2A2A2E' }}
+                    >
+                      {personalInfo.phone}
+                    </a>
+                  </div>
                 </div>
-                
-                <div>
-                  <Input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full"
-                    style={{ borderColor: '#7C9A92' }}
-                  />
+              </Card>
+              
+              <Card className="p-6 transition-all duration-500 hover:shadow-xl" style={{ backgroundColor: '#FFFFFF' }}>
+                <div className="flex items-center gap-4">
+                  <div className="p-3 rounded-lg" style={{ backgroundColor: '#8B9D83' }}>
+                    <MapPin size={24} color="#FFFFFF" />
+                  </div>
+                  <div>
+                    <p className="text-sm mb-1" style={{ color: '#8B9D83', fontFamily: 'Inter, sans-serif' }}>Location</p>
+                    <p className="font-medium text-lg" style={{ color: '#2A2A2E' }}>
+                      {personalInfo.location}
+                    </p>
+                  </div>
                 </div>
-                
-                <div>
-                  <Input
-                    type="text"
-                    name="subject"
-                    placeholder="Subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required
-                    className="w-full"
-                    style={{ borderColor: '#7C9A92' }}
-                  />
-                </div>
-                
-                <div>
-                  <Textarea
-                    name="message"
-                    placeholder="Your Message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={5}
-                    className="w-full"
-                    style={{ borderColor: '#7C9A92' }}
-                  />
-                </div>
-                
-                <Button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full py-6 text-base font-medium rounded-lg transition-all duration-300 hover:shadow-lg flex items-center justify-center gap-2"
-                  style={{ backgroundColor: '#7C9A92', color: '#F8FAFC' }}
-                >
-                  <Send size={18} />
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
-                </Button>
-              </form>
+              </Card>
             </div>
           </div>
         </div>
