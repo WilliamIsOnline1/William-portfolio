@@ -1,9 +1,9 @@
 // Mock data for resume webpage
 export const resumeData = {
   personal: {
-    name: "Alex Rivera",
+    name: "William Davis",
     title: "Food Science Student",
-    email: "alex.rivera@email.com",
+    email: "williamdavis@email.com",
     phone: "+1 (555) 123-4567",
     location: "Boston, MA",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",

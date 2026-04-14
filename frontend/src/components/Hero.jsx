@@ -10,7 +10,8 @@ const Hero = ({ data }) => {
   };
 
   const handleDownloadResume = () => {
-    alert('Resume download will be implemented with backend');
+    // Open resume in new tab (allows viewing and downloading)
+    window.open('/William_Davis_Resume.pdf', '_blank');
   };
 
   return (
