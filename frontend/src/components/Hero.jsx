@@ -14,35 +14,42 @@ const Hero = ({ data }) => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center" style={{ backgroundColor: '#2A2A2E' }}>
+    <section id="hero" className="min-h-screen flex items-center justify-center" style={{ backgroundColor: '#111827' }}>
       <div className="container mx-auto px-6 py-32">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="mb-8 animate-fadeIn">
+          <div className="mb-8">
             <img
               src={data.image}
               alt={data.name}
               className="w-48 h-48 rounded-full mx-auto object-cover border-4 shadow-2xl transition-all duration-500 hover:scale-105"
-              style={{ borderColor: '#8B9D83' }}
+              style={{ borderColor: '#9CA3AF' }}
             />
           </div>
           
+          <p
+            className="text-2xl mb-3 transition-all duration-500"
+            style={{ color: '#9CA3AF', fontFamily: 'JetBrains Mono, monospace', fontWeight: '400' }}
+          >
+            Hi, I'm
+          </p>
+          
           <h1
             className="text-6xl md:text-7xl font-bold mb-6 transition-all duration-500"
-            style={{ color: '#E8E8E8', fontFamily: 'Merriweather, serif', letterSpacing: '-0.02em' }}
+            style={{ color: '#E5E7EB', fontFamily: 'Inter, sans-serif', letterSpacing: '-0.02em' }}
           >
             {data.name}
           </h1>
           
           <p
             className="text-2xl md:text-3xl mb-8"
-            style={{ color: '#8B9D83', fontFamily: 'Inter, sans-serif', fontWeight: '300' }}
+            style={{ color: '#9CA3AF', fontFamily: 'JetBrains Mono, monospace', fontWeight: '400' }}
           >
             {data.title}
           </p>
           
           <p
             className="text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed"
-            style={{ color: '#B8B8B8', fontFamily: 'Inter, sans-serif', fontWeight: '300' }}
+            style={{ color: '#9CA3AF', fontFamily: 'Inter, sans-serif', fontWeight: '300' }}
           >
             {data.tagline}
           </p>
@@ -52,9 +59,10 @@ const Hero = ({ data }) => {
               onClick={() => scrollToSection('about')}
               className="px-8 py-6 text-base font-medium rounded-lg transition-all duration-500 hover:shadow-2xl hover:scale-105"
               style={{
-                backgroundColor: '#8B9D83',
-                color: '#FFFFFF',
-                border: 'none',
+                backgroundColor: '#1F2937',
+                color: '#E5E7EB',
+                border: '1px solid #9CA3AF',
+                fontFamily: 'Inter, sans-serif'
               }}
             >
               About
@@ -63,9 +71,10 @@ const Hero = ({ data }) => {
               onClick={() => scrollToSection('experience')}
               className="px-8 py-6 text-base font-medium rounded-lg transition-all duration-500 hover:shadow-2xl hover:scale-105"
               style={{
-                backgroundColor: 'transparent',
-                color: '#8B9D83',
-                border: '2px solid #8B9D83',
+                backgroundColor: '#1F2937',
+                color: '#E5E7EB',
+                border: '1px solid #9CA3AF',
+                fontFamily: 'Inter, sans-serif'
               }}
             >
               Experience
@@ -74,9 +83,10 @@ const Hero = ({ data }) => {
               onClick={handleDownloadResume}
               className="px-8 py-6 text-base font-medium rounded-lg transition-all duration-500 hover:shadow-2xl hover:scale-105"
               style={{
-                backgroundColor: '#A89068',
-                color: '#FFFFFF',
-                border: 'none',
+                backgroundColor: '#1F2937',
+                color: '#E5E7EB',
+                border: '1px solid #9CA3AF',
+                fontFamily: 'Inter, sans-serif'
               }}
             >
               Resume
