@@ -2,14 +2,14 @@ import React from 'react';
 
 const About = ({ content, personalData }) => {
   return (
-    <section id="about" className="py-24 relative" style={{ backgroundColor: '#0A0A0A' }}>
+    <section id="about" className="py-24 relative" style={{ backgroundColor: '#1E293B' }}>
       <div className="absolute top-6 left-1/2 transform -translate-x-1/2 flex items-center gap-2 opacity-30">
         <img
           src={personalData.image}
           alt={personalData.name}
           className="w-6 h-6 rounded-full object-cover"
         />
-        <span className="text-xs" style={{ color: '#FFFFFF', fontFamily: 'JetBrains Mono, monospace' }}>
+        <span className="text-xs" style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif' }}>
           {personalData.name}
         </span>
       </div>
@@ -21,16 +21,16 @@ const About = ({ content, personalData }) => {
             style={{
               color: '#FFFFFF',
               fontFamily: 'Inter, sans-serif',
-              textShadow: '0 0 20px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.2)'
+              textShadow: '0 0 20px rgba(255, 255, 255, 0.3)'
             }}
           >
             About Me
           </h2>
-          <div className="w-24 h-0.5 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #A855F7, #FFD700, #FFA500)' }}></div>
+          <div className="w-24 h-1 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #8B5CF6, #3B82F6)' }}></div>
           
           <p
             className="text-lg leading-relaxed text-center transition-all duration-500"
-            style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif', lineHeight: '1.8', opacity: 0.9 }}
+            style={{ color: '#E2E8F0', fontFamily: 'Inter, sans-serif', lineHeight: '1.8' }}
           >
             {content}
           </p>

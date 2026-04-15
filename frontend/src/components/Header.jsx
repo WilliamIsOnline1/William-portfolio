@@ -25,14 +25,11 @@ const Header = ({ data }) => {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 py-3 shadow-lg transition-all duration-500"
+      className="fixed top-0 left-0 right-0 z-50 py-4 shadow-lg transition-all duration-500"
       style={{
-        backgroundColor: 'rgba(0, 0, 0, 0.95)',
+        backgroundColor: 'rgba(15, 23, 42, 0.95)',
         backdropFilter: 'blur(10px)',
-        borderBottom: '1px solid transparent',
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), linear-gradient(90deg, #A855F7, #FFD700, #FFA500)',
-        backgroundOrigin: 'border-box',
-        backgroundClip: 'padding-box, border-box',
+        borderBottom: '1px solid rgba(59, 130, 246, 0.3)',
       }}
     >
       <div className="container mx-auto px-6">
@@ -45,10 +42,10 @@ const Header = ({ data }) => {
               src={data.image}
               alt={data.name}
               className="w-10 h-10 rounded-full object-cover border-2 transition-all duration-500"
-              style={{ borderColor: '#A855F7' }}
+              style={{ borderColor: '#8B5CF6' }}
             />
             <h3
-              className="text-lg font-bold transition-all duration-500"
+              className="text-lg font-semibold transition-all duration-500"
               style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif' }}
             >
               {data.name}
@@ -56,12 +53,12 @@ const Header = ({ data }) => {
           </div>
 
           <nav className="hidden md:flex items-center gap-8">
-            {['About', 'Experience', 'Education', 'Contact'].map((item, index) => (
+            {['About', 'Experience', 'Education', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
                 className="text-sm font-medium transition-all duration-300 hover:opacity-70"
-                style={{ color: index % 3 === 0 ? '#A855F7' : index % 3 === 1 ? '#FFD700' : '#FFA500', fontFamily: 'Inter, sans-serif' }}
+                style={{ color: '#94A3B8', fontFamily: 'Inter, sans-serif' }}
               >
                 {item}
               </button>
@@ -79,12 +76,12 @@ const Header = ({ data }) => {
 
         {isMobileMenuOpen && (
           <nav className="md:hidden mt-4 py-4 space-y-3">
-            {['About', 'Experience', 'Education', 'Contact'].map((item, index) => (
+            {['About', 'Experience', 'Education', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
                 className="block w-full text-left px-4 py-2 text-sm font-medium transition-all duration-300 hover:opacity-70"
-                style={{ color: index % 3 === 0 ? '#A855F7' : index % 3 === 1 ? '#FFD700' : '#FFA500', fontFamily: 'Inter, sans-serif' }}
+                style={{ color: '#94A3B8', fontFamily: 'Inter, sans-serif' }}
               >
                 {item}
               </button>
