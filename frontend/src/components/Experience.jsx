@@ -2,20 +2,9 @@ import React from 'react';
 import { Briefcase, CheckCircle } from 'lucide-react';
 import { Card } from './ui/card';
 
-const Experience = ({ experiences, skills, personalData }) => {
+const Experience = ({ experiences, skills }) => {
   return (
-    <section id="experience" className="py-24 relative" style={{ backgroundColor: '#0A0E1A' }}>
-      <div className="absolute top-6 left-1/2 transform -translate-x-1/2 flex items-center gap-2 opacity-30">
-        <img
-          src={personalData.image}
-          alt={personalData.name}
-          className="w-6 h-6 rounded-full object-cover"
-        />
-        <span className="text-xs" style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif' }}>
-          {personalData.name}
-        </span>
-      </div>
-
+    <section id="experience" className="py-24 relative" style={{ backgroundColor: '#05080F' }}>
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <h2
@@ -23,22 +12,22 @@ const Experience = ({ experiences, skills, personalData }) => {
             style={{
               color: '#FFFFFF',
               fontFamily: 'Inter, sans-serif',
-              textShadow: '0 0 30px rgba(255, 255, 255, 0.5), 0 0 60px rgba(124, 152, 171, 0.3)'
+              textShadow: '0 0 30px rgba(255, 255, 255, 0.5), 0 0 60px rgba(90, 122, 138, 0.3)'
             }}
           >
             Experience
           </h2>
-          <div className="w-24 h-1 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #9DB4A0, #7C98AB)' }}></div>
+          <div className="w-24 h-1 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #7A9E7E, #5A7A8A)' }}></div>
           
           <div className="space-y-6">
             {experiences.map((exp) => (
               <Card
                 key={exp.id}
                 className="p-8 transition-all duration-500 hover:shadow-xl hover:scale-102"
-                style={{ backgroundColor: '#141B2D', borderLeft: '4px solid #7C98AB', border: 'none' }}
+                style={{ backgroundColor: '#0D1219', borderLeft: '4px solid #5A7A8A', border: 'none' }}
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg transition-all duration-300" style={{ backgroundColor: '#7C98AB' }}>
+                  <div className="p-3 rounded-lg transition-all duration-300" style={{ backgroundColor: '#5A7A8A' }}>
                     <Briefcase size={24} color="#FFFFFF" />
                   </div>
                   
@@ -52,25 +41,25 @@ const Experience = ({ experiences, skills, personalData }) => {
                       </h3>
                       <span
                         className="text-sm font-medium px-4 py-1.5 rounded-full transition-all duration-300"
-                        style={{ backgroundColor: '#9D8B73', color: '#FFFFFF', fontFamily: 'Inter, sans-serif', fontWeight: '600' }}
+                        style={{ backgroundColor: '#7A6850', color: '#FFFFFF', fontFamily: 'Inter, sans-serif', fontWeight: '600' }}
                       >
                         {exp.duration}
                       </span>
                     </div>
                     
-                    <p className="text-lg mb-4 transition-all duration-300" style={{ color: '#9DB4A0', fontFamily: 'Inter, sans-serif', fontWeight: '500' }}>
+                    <p className="text-lg mb-4 transition-all duration-300" style={{ color: '#7A9E7E', fontFamily: 'Inter, sans-serif', fontWeight: '500' }}>
                       {exp.company}
                     </p>
                     
-                    <p className="mb-4 transition-all duration-300" style={{ color: '#D1D5DB', fontFamily: 'Inter, sans-serif' }}>
+                    <p className="mb-4 transition-all duration-300" style={{ color: '#C1C9D2', fontFamily: 'Inter, sans-serif' }}>
                       {exp.description}
                     </p>
                     
                     <div className="space-y-2">
                       {exp.achievements.map((achievement, idx) => (
                         <div key={idx} className="flex items-start gap-2 transition-all duration-300">
-                          <CheckCircle size={18} className="mt-1 flex-shrink-0" style={{ color: '#7C98AB' }} />
-                          <span style={{ color: '#E5E7EB', fontFamily: 'Inter, sans-serif' }}>{achievement}</span>
+                          <CheckCircle size={18} className="mt-1 flex-shrink-0" style={{ color: '#5A7A8A' }} />
+                          <span style={{ color: '#D1D9E6', fontFamily: 'Inter, sans-serif' }}>{achievement}</span>
                         </div>
                       ))}
                     </div>
@@ -94,7 +83,7 @@ const Experience = ({ experiences, skills, personalData }) => {
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div>
-                <h4 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: '#9DB4A0', fontFamily: 'Inter, sans-serif' }}>
+                <h4 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: '#7A9E7E', fontFamily: 'Inter, sans-serif' }}>
                   Technical
                 </h4>
                 <div className="flex flex-wrap gap-2">
@@ -102,7 +91,7 @@ const Experience = ({ experiences, skills, personalData }) => {
                     <span
                       key={index}
                       className="px-3 py-1.5 text-sm rounded-md transition-all duration-300 hover:scale-105"
-                      style={{ backgroundColor: '#141B2D', color: '#FFFFFF', border: '1px solid #9DB4A0', fontFamily: 'Inter, sans-serif' }}
+                      style={{ backgroundColor: '#0D1219', color: '#FFFFFF', border: '1px solid #7A9E7E', fontFamily: 'Inter, sans-serif' }}
                     >
                       {skill}
                     </span>
@@ -111,7 +100,7 @@ const Experience = ({ experiences, skills, personalData }) => {
               </div>
               
               <div>
-                <h4 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: '#7C98AB', fontFamily: 'Inter, sans-serif' }}>
+                <h4 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: '#5A7A8A', fontFamily: 'Inter, sans-serif' }}>
                   Software & Tools
                 </h4>
                 <div className="flex flex-wrap gap-2">
@@ -119,7 +108,7 @@ const Experience = ({ experiences, skills, personalData }) => {
                     <span
                       key={index}
                       className="px-3 py-1.5 text-sm rounded-md transition-all duration-300 hover:scale-105"
-                      style={{ backgroundColor: '#141B2D', color: '#FFFFFF', border: '1px solid #7C98AB', fontFamily: 'Inter, sans-serif' }}
+                      style={{ backgroundColor: '#0D1219', color: '#FFFFFF', border: '1px solid #5A7A8A', fontFamily: 'Inter, sans-serif' }}
                     >
                       {skill}
                     </span>
@@ -128,7 +117,7 @@ const Experience = ({ experiences, skills, personalData }) => {
               </div>
               
               <div>
-                <h4 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: '#9D8B73', fontFamily: 'Inter, sans-serif' }}>
+                <h4 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: '#7A6850', fontFamily: 'Inter, sans-serif' }}>
                   Soft Skills
                 </h4>
                 <div className="flex flex-wrap gap-2">
@@ -136,7 +125,7 @@ const Experience = ({ experiences, skills, personalData }) => {
                     <span
                       key={index}
                       className="px-3 py-1.5 text-sm rounded-md transition-all duration-300 hover:scale-105"
-                      style={{ backgroundColor: '#141B2D', color: '#FFFFFF', border: '1px solid #9D8B73', fontFamily: 'Inter, sans-serif' }}
+                      style={{ backgroundColor: '#0D1219', color: '#FFFFFF', border: '1px solid #7A6850', fontFamily: 'Inter, sans-serif' }}
                     >
                       {skill}
                     </span>
