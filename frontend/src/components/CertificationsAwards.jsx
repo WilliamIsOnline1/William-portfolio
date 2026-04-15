@@ -23,32 +23,32 @@ const CertificationsAwards = ({ certifications, awards, personalData }) => {
             style={{
               color: '#FFFFFF',
               fontFamily: 'Inter, sans-serif',
-              textShadow: '0 0 15px rgba(255, 215, 0, 0.4), 0 0 30px rgba(255, 165, 0, 0.2)'
+              textShadow: '0 0 20px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.2)'
             }}
           >
-            Certifications & Awards
+            Awards & Certifications
           </h2>
-          <div className="w-24 h-0.5 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #FFD700, #FFA500)' }}></div>
+          <div className="w-24 h-0.5 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #A855F7, #FFD700, #FFA500)' }}></div>
           
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h3 className="text-2xl font-bold mb-6" style={{ color: '#FFD700', fontFamily: 'Inter, sans-serif' }}>
-                Certifications
+                Notable Awards
               </h3>
               <div className="space-y-4">
-                {certifications.map((cert) => (
-                  <Card key={cert.id} className="p-4 transition-all duration-500 hover:shadow-xl" style={{ borderLeft: '3px solid #FFD700', backgroundColor: '#0A0A0A' }}>
+                {awards.map((award, index) => (
+                  <Card key={award.id} className="p-4 transition-all duration-500 hover:shadow-xl" style={{ borderLeft: '3px solid #FFD700', backgroundColor: '#0A0A0A' }}>
                     <div className="flex items-start gap-3">
-                      <Award size={20} className="mt-1 flex-shrink-0" style={{ color: '#FFD700' }} />
+                      <Medal size={20} className="mt-1 flex-shrink-0" style={{ color: '#FFD700' }} />
                       <div>
                         <h4 className="font-bold mb-1" style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif' }}>
-                          {cert.name}
+                          {award.title}
                         </h4>
                         <p className="text-sm mb-1" style={{ color: '#FFA500', fontFamily: 'JetBrains Mono, monospace' }}>
-                          {cert.issuer}
+                          {award.organization}
                         </p>
                         <p className="text-xs" style={{ color: '#FFFFFF', opacity: 0.7 }}>
-                          {cert.date}
+                          {award.year}
                         </p>
                       </div>
                     </div>
@@ -58,23 +58,23 @@ const CertificationsAwards = ({ certifications, awards, personalData }) => {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-6" style={{ color: '#FFA500', fontFamily: 'Inter, sans-serif' }}>
-                Awards
+              <h3 className="text-2xl font-bold mb-6" style={{ color: '#A855F7', fontFamily: 'Inter, sans-serif' }}>
+                Certifications
               </h3>
               <div className="space-y-4">
-                {awards.map((award) => (
-                  <Card key={award.id} className="p-4 transition-all duration-500 hover:shadow-xl" style={{ borderLeft: '3px solid #FFA500', backgroundColor: '#0A0A0A' }}>
+                {certifications.map((cert) => (
+                  <Card key={cert.id} className="p-4 transition-all duration-500 hover:shadow-xl" style={{ borderLeft: '3px solid #A855F7', backgroundColor: '#0A0A0A' }}>
                     <div className="flex items-start gap-3">
-                      <Medal size={20} className="mt-1 flex-shrink-0" style={{ color: '#FFA500' }} />
+                      <Award size={20} className="mt-1 flex-shrink-0" style={{ color: '#A855F7' }} />
                       <div>
                         <h4 className="font-bold mb-1" style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif' }}>
-                          {award.title}
+                          {cert.name}
                         </h4>
-                        <p className="text-sm mb-1" style={{ color: '#FFD700', fontFamily: 'JetBrains Mono, monospace' }}>
-                          {award.organization}
+                        <p className="text-sm mb-1" style={{ color: '#A855F7', fontFamily: 'JetBrains Mono, monospace' }}>
+                          {cert.issuer}
                         </p>
                         <p className="text-xs" style={{ color: '#FFFFFF', opacity: 0.7 }}>
-                          {award.year}
+                          {cert.date}
                         </p>
                       </div>
                     </div>

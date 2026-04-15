@@ -22,7 +22,7 @@ const Hero = ({ data }) => {
               src={data.image}
               alt={data.name}
               className="w-48 h-48 rounded-full mx-auto object-cover border-4 shadow-2xl transition-all duration-500 hover:scale-105"
-              style={{ borderColor: '#FFD700', boxShadow: '0 0 30px rgba(255, 215, 0, 0.3)' }}
+              style={{ borderColor: '#A855F7', boxShadow: '0 0 30px rgba(168, 85, 247, 0.4)' }}
             />
           </div>
           
@@ -39,7 +39,7 @@ const Hero = ({ data }) => {
               color: '#FFFFFF',
               fontFamily: 'Inter, sans-serif',
               letterSpacing: '-0.02em',
-              textShadow: '0 0 20px rgba(255, 215, 0, 0.5), 0 0 40px rgba(255, 165, 0, 0.3)'
+              textShadow: '0 0 20px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.3)'
             }}
           >
             {data.name}
@@ -47,7 +47,7 @@ const Hero = ({ data }) => {
           
           <p
             className="text-2xl md:text-3xl mb-8"
-            style={{ color: '#FFD700', fontFamily: 'JetBrains Mono, monospace', fontWeight: '400' }}
+            style={{ color: '#A855F7', fontFamily: 'JetBrains Mono, monospace', fontWeight: '400' }}
           >
             {data.title}
           </p>
@@ -65,8 +65,8 @@ const Hero = ({ data }) => {
               className="px-8 py-6 text-base font-medium rounded-lg transition-all duration-500 hover:shadow-2xl hover:scale-105"
               style={{
                 backgroundColor: '#000000',
-                color: '#FFD700',
-                border: '2px solid #FFD700',
+                color: '#A855F7',
+                border: '2px solid #A855F7',
                 fontFamily: 'Inter, sans-serif'
               }}
             >
@@ -77,8 +77,8 @@ const Hero = ({ data }) => {
               className="px-8 py-6 text-base font-medium rounded-lg transition-all duration-500 hover:shadow-2xl hover:scale-105"
               style={{
                 backgroundColor: '#000000',
-                color: '#FFA500',
-                border: '2px solid #FFA500',
+                color: '#FFD700',
+                border: '2px solid #FFD700',
                 fontFamily: 'Inter, sans-serif'
               }}
             >
@@ -88,7 +88,7 @@ const Hero = ({ data }) => {
               onClick={handleDownloadResume}
               className="px-8 py-6 text-base font-medium rounded-lg transition-all duration-500 hover:shadow-2xl hover:scale-105"
               style={{
-                backgroundColor: '#FFD700',
+                background: 'linear-gradient(135deg, #A855F7, #FFD700)',
                 color: '#000000',
                 border: 'none',
                 fontFamily: 'Inter, sans-serif',

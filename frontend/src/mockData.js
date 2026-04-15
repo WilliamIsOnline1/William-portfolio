@@ -2,48 +2,37 @@
 export const resumeData = {
   personal: {
     name: "William Davis",
-    title: "Food Science Student",
-    email: "williamdavis@email.com",
+    title: "Food, Nutrition, and Society Student",
+    email: "william.foodsci83@gmail.com",
     phone: "+1 (555) 123-4567",
-    location: "Boston, MA",
+    location: "Baton Rouge, Louisiana",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-    tagline: "Passionate about food innovation, sustainability, and creating healthier products for tomorrow."
+    tagline: "Passionate about food innovation, nutrition, and creating meaningful connections between food science and community wellbeing."
   },
   
-  about: "I am a dedicated Food Science student with a passion for understanding the science behind food production, safety, and nutrition. My academic journey has equipped me with knowledge in food chemistry, microbiology, and processing technologies. Through internships and research projects, I've developed practical skills in quality control, product development, and laboratory analysis. I'm committed to contributing to the food industry by creating innovative, sustainable, and nutritious food solutions.",
+  about: "I am a dedicated student at Louisiana State University pursuing a Bachelor of Science in Food, Nutrition, and Society. My academic journey combines scientific understanding with real-world application, from chemistry and microbiology to lifecycle nutrition. Beyond academics, I've demonstrated leadership in retail operations and studio management, while earning national recognition for culinary innovation. I'm committed to bridging the gap between food science, nutrition, and community impact.",
   
   experience: [
     {
       id: 1,
-      company: "Green Valley Foods",
-      position: "Quality Control Intern",
-      duration: "Jun 2024 - Aug 2024",
-      description: "Conducted microbiological testing and chemical analysis of food products. Assisted in implementing HACCP protocols and maintaining quality standards.",
+      company: "J.Crew Group Inc",
+      position: "Sales Associate",
+      duration: "Oct 2023 - Aug 2025",
+      description: "Delivered exceptional customer service in a fast-paced retail environment, focusing on personalized product recommendations and relationship building.",
       achievements: [
-        "Reduced testing time by 15% through process optimization",
-        "Contributed to successful FDA inspection with zero violations"
+        "Personalized product selection and customer relationship building",
+        "Inventory management and point of sale efficiency"
       ]
     },
     {
       id: 2,
-      company: "University Research Lab",
-      position: "Research Assistant",
-      duration: "Jan 2024 - May 2024",
-      description: "Supported research on plant-based protein alternatives. Conducted sensory evaluations and documented experimental procedures.",
+      company: "City of Shreveport",
+      position: "Studio Operations Assistant Manager",
+      duration: "Jun 2022 - Jul 2022",
+      description: "Managed daily studio operations and facility maintenance while developing operational documentation and procedures.",
       achievements: [
-        "Co-authored research paper on protein extraction methods",
-        "Managed lab inventory and equipment calibration"
-      ]
-    },
-    {
-      id: 3,
-      company: "Fresh Start Bakery",
-      position: "Production Assistant",
-      duration: "Jun 2023 - Aug 2023",
-      description: "Assisted in product formulation and recipe development for gluten-free baked goods. Maintained sanitation standards and production records.",
-      achievements: [
-        "Helped develop 3 new gluten-free product lines",
-        "Implemented improved cleaning protocols"
+        "Coordinated daily studio operations and facility maintenance",
+        "Developed comprehensive handbook on studio procedures"
       ]
     }
   ],
@@ -51,104 +40,97 @@ export const resumeData = {
   education: [
     {
       id: 1,
-      institution: "University of Massachusetts",
-      degree: "Bachelor of Science in Food Science",
-      duration: "2022 - Present",
+      institution: "Louisiana State University (LSU)",
+      degree: "Bachelor of Science in Food, Nutrition, and Society",
+      duration: "Expected Dec 2027",
       gpa: "3.7/4.0",
-      relevant: "Relevant Coursework: Food Chemistry, Food Microbiology, Food Processing, Nutrition, Quality Assurance"
+      relevant: "Relevant Coursework: Chemistry, Microbiology, Speech, Lifecycle Nutrition"
     }
   ],
   
   skills: {
     technical: [
-      "HACCP & Food Safety",
-      "Quality Control",
-      "Laboratory Analysis",
-      "Sensory Evaluation",
-      "Product Development",
-      "Microbiology Testing"
+      "Nutrition Analysis",
+      "Food Safety Protocols",
+      "Customer Relations",
+      "Inventory Management",
+      "Facility Operations"
     ],
     software: [
       "Microsoft Office Suite",
-      "Statistical Analysis (SPSS)",
-      "Lab Documentation Systems",
-      "Data Analysis"
+      "Point of Sale Systems",
+      "Presentation Software",
+      "Data Management"
     ],
     soft: [
+      "Leadership",
+      "Communication",
       "Problem Solving",
       "Team Collaboration",
-      "Attention to Detail",
       "Time Management",
-      "Communication",
-      "Research Skills"
+      "Public Speaking"
     ]
   },
   
   certifications: [
     {
       id: 1,
-      name: "ServSafe Food Handler Certification",
-      issuer: "National Restaurant Association",
+      name: "Food Safety Certification",
+      issuer: "Louisiana Department of Health",
       date: "2024"
     },
     {
       id: 2,
-      name: "HACCP Principles Certification",
-      issuer: "Food Safety Institute",
+      name: "Customer Service Excellence",
+      issuer: "J.Crew Group Inc",
       date: "2024"
-    },
-    {
-      id: 3,
-      name: "Allergen Awareness Training",
-      issuer: "Food Allergy Research & Education",
-      date: "2023"
     }
   ],
   
   awards: [
     {
       id: 1,
-      title: "Dean's List",
-      organization: "University of Massachusetts",
-      year: "2023, 2024"
+      title: "Healthy Lunchtime Challenge Winner",
+      organization: "White House State Representative",
+      year: "2015"
     },
     {
       id: 2,
-      title: "Outstanding Food Science Student Award",
-      organization: "Department of Food Science",
-      year: "2024"
+      title: "Uncle Ben's Rice National Contest Winner",
+      organization: "Uncle Ben's Rice ($30,000 award)",
+      year: "2015"
     },
     {
       id: 3,
-      title: "Research Excellence Award",
-      organization: "University Research Symposium",
-      year: "2024"
+      title: "Earnest J. Gaines Literary Symposium Presenter",
+      organization: "Literary Symposium",
+      year: "2023"
     }
   ],
   
   recommendations: [
     {
       id: 1,
-      name: "Dr. Sarah Mitchell",
-      position: "Research Supervisor",
-      company: "University Research Lab",
-      text: "Alex demonstrated exceptional dedication and analytical skills during their time in our lab. Their attention to detail and passion for food science research made them an invaluable team member.",
+      name: "Sarah Johnson",
+      position: "Store Manager",
+      company: "J.Crew Group Inc",
+      text: "William consistently demonstrated exceptional customer service skills and a genuine passion for helping customers find exactly what they need. His attention to detail in inventory management and his ability to build lasting customer relationships made him an invaluable team member.",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop"
     },
     {
       id: 2,
-      name: "Michael Chen",
-      position: "Quality Assurance Manager",
-      company: "Green Valley Foods",
-      text: "Alex quickly grasped complex quality control procedures and contributed meaningfully to our team. Their proactive approach and eagerness to learn set them apart from other interns.",
+      name: "Marcus Thompson",
+      position: "Facilities Director",
+      company: "City of Shreveport",
+      text: "William's organizational skills and dedication to excellence were evident in every aspect of his work. He took the initiative to create comprehensive operational documentation that continues to benefit our studio operations today.",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop"
     },
     {
       id: 3,
-      name: "Emma Rodriguez",
-      position: "Production Manager",
-      company: "Fresh Start Bakery",
-      text: "Alex brought fresh ideas and enthusiasm to our production team. Their understanding of food science principles helped us improve our gluten-free product formulations significantly.",
+      name: "Dr. Michelle Roberts",
+      position: "Professor of Nutrition",
+      company: "Louisiana State University",
+      text: "William brings a unique perspective to his studies, combining academic excellence with real-world experience. His passion for food science and nutrition, along with his impressive achievements in culinary competitions, sets him apart as a student dedicated to making a difference in the field.",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop"
     }
   ]

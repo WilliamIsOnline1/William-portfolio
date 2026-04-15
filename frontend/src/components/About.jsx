@@ -21,12 +21,12 @@ const About = ({ content, personalData }) => {
             style={{
               color: '#FFFFFF',
               fontFamily: 'Inter, sans-serif',
-              textShadow: '0 0 15px rgba(255, 215, 0, 0.4), 0 0 30px rgba(255, 165, 0, 0.2)'
+              textShadow: '0 0 20px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.2)'
             }}
           >
             About Me
           </h2>
-          <div className="w-24 h-0.5 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #FFD700, #FFA500)' }}></div>
+          <div className="w-24 h-0.5 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #A855F7, #FFD700, #FFA500)' }}></div>
           
           <p
             className="text-lg leading-relaxed text-center transition-all duration-500"

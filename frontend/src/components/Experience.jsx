@@ -23,22 +23,22 @@ const Experience = ({ experiences, skills, personalData }) => {
             style={{
               color: '#FFFFFF',
               fontFamily: 'Inter, sans-serif',
-              textShadow: '0 0 15px rgba(255, 215, 0, 0.4), 0 0 30px rgba(255, 165, 0, 0.2)'
+              textShadow: '0 0 20px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.2)'
             }}
           >
             Experience
           </h2>
-          <div className="w-24 h-0.5 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #FFD700, #FFA500)' }}></div>
+          <div className="w-24 h-0.5 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #A855F7, #FFD700, #FFA500)' }}></div>
           
           <div className="space-y-8">
-            {experiences.map((exp) => (
+            {experiences.map((exp, index) => (
               <Card
                 key={exp.id}
                 className="p-8 transition-all duration-500 hover:shadow-2xl hover:scale-102"
-                style={{ backgroundColor: '#0A0A0A', borderLeft: '4px solid #FFD700', border: 'none' }}
+                style={{ backgroundColor: '#0A0A0A', borderLeft: `4px solid ${index % 2 === 0 ? '#A855F7' : '#FFD700'}`, border: 'none' }}
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg transition-all duration-300" style={{ backgroundColor: '#FFD700' }}>
+                  <div className="p-3 rounded-lg transition-all duration-300" style={{ backgroundColor: index % 2 === 0 ? '#A855F7' : '#FFD700' }}>
                     <Briefcase size={24} color="#000000" />
                   </div>
                   
@@ -58,7 +58,7 @@ const Experience = ({ experiences, skills, personalData }) => {
                       </span>
                     </div>
                     
-                    <p className="text-lg mb-4 transition-all duration-300" style={{ color: '#FFD700', fontFamily: 'JetBrains Mono, monospace' }}>
+                    <p className="text-lg mb-4 transition-all duration-300" style={{ color: index % 2 === 0 ? '#A855F7' : '#FFD700', fontFamily: 'JetBrains Mono, monospace' }}>
                       {exp.company}
                     </p>
                     
@@ -87,18 +87,35 @@ const Experience = ({ experiences, skills, personalData }) => {
               style={{
                 color: '#FFFFFF',
                 fontFamily: 'Inter, sans-serif',
-                textShadow: '0 0 10px rgba(255, 215, 0, 0.3)'
+                textShadow: '0 0 15px rgba(255, 255, 255, 0.4)'
               }}
             >
               Skills
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div>
-                <h4 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: '#FFD700', fontFamily: 'JetBrains Mono, monospace' }}>
+                <h4 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: '#A855F7', fontFamily: 'JetBrains Mono, monospace' }}>
                   Technical
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {skills.technical.map((skill, index) => (
+                    <span
+                      key={index}
+                      className="px-3 py-1.5 text-sm rounded-md transition-all duration-300 hover:scale-105"
+                      style={{ backgroundColor: '#0A0A0A', color: '#FFFFFF', border: '1px solid #A855F7', fontFamily: 'Inter, sans-serif' }}
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              
+              <div>
+                <h4 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: '#FFD700', fontFamily: 'JetBrains Mono, monospace' }}>
+                  Software & Tools
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  {skills.software.map((skill, index) => (
                     <span
                       key={index}
                       className="px-3 py-1.5 text-sm rounded-md transition-all duration-300 hover:scale-105"
@@ -112,23 +129,6 @@ const Experience = ({ experiences, skills, personalData }) => {
               
               <div>
                 <h4 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: '#FFA500', fontFamily: 'JetBrains Mono, monospace' }}>
-                  Software & Tools
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                  {skills.software.map((skill, index) => (
-                    <span
-                      key={index}
-                      className="px-3 py-1.5 text-sm rounded-md transition-all duration-300 hover:scale-105"
-                      style={{ backgroundColor: '#0A0A0A', color: '#FFFFFF', border: '1px solid #FFA500', fontFamily: 'Inter, sans-serif' }}
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              
-              <div>
-                <h4 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: '#FFD700', fontFamily: 'JetBrains Mono, monospace' }}>
                   Soft Skills
                 </h4>
                 <div className="flex flex-wrap gap-2">
@@ -136,7 +136,7 @@ const Experience = ({ experiences, skills, personalData }) => {
                     <span
                       key={index}
                       className="px-3 py-1.5 text-sm rounded-md transition-all duration-300 hover:scale-105"
-                      style={{ backgroundColor: '#0A0A0A', color: '#FFFFFF', border: '1px solid #FFD700', fontFamily: 'Inter, sans-serif' }}
+                      style={{ backgroundColor: '#0A0A0A', color: '#FFFFFF', border: '1px solid #FFA500', fontFamily: 'Inter, sans-serif' }}
                     >
                       {skill}
                     </span>

@@ -17,13 +17,13 @@ const Contact = ({ personalInfo }) => {
 
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Glowing "Say Hello" text */}
+          {/* Glowing "Say Hello" text - WHITE GLOW */}
           <h2
             className="text-7xl md:text-8xl font-bold mb-6 transition-all duration-500"
             style={{
               color: '#FFFFFF',
               fontFamily: 'Inter, sans-serif',
-              textShadow: '0 0 40px rgba(255, 215, 0, 0.6), 0 0 80px rgba(255, 165, 0, 0.4), 0 0 120px rgba(255, 165, 0, 0.3)'
+              textShadow: '0 0 40px rgba(255, 255, 255, 0.8), 0 0 80px rgba(255, 255, 255, 0.5), 0 0 120px rgba(255, 255, 255, 0.3)'
             }}
           >
             Say Hello
@@ -43,10 +43,13 @@ const Contact = ({ personalInfo }) => {
               className="inline-flex items-center gap-4 px-12 py-6 rounded-lg transition-all duration-500 hover:shadow-2xl hover:scale-105"
               style={{
                 backgroundColor: '#0A0A0A',
-                border: '2px solid #FFD700',
+                border: '2px solid transparent',
+                backgroundImage: 'linear-gradient(#0A0A0A, #0A0A0A), linear-gradient(135deg, #A855F7, #FFD700, #FFA500)',
+                backgroundOrigin: 'border-box',
+                backgroundClip: 'padding-box, border-box',
               }}
             >
-              <div className="p-3 rounded-lg" style={{ backgroundColor: '#FFD700' }}>
+              <div className="p-3 rounded-lg" style={{ background: 'linear-gradient(135deg, #A855F7, #FFD700)' }}>
                 <Mail size={28} color="#000000" />
               </div>
               <div className="text-left">

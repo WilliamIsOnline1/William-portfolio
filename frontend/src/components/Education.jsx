@@ -23,22 +23,22 @@ const Education = ({ education, personalData }) => {
             style={{
               color: '#FFFFFF',
               fontFamily: 'Inter, sans-serif',
-              textShadow: '0 0 15px rgba(255, 215, 0, 0.4), 0 0 30px rgba(255, 165, 0, 0.2)'
+              textShadow: '0 0 20px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.2)'
             }}
           >
             Education
           </h2>
-          <div className="w-24 h-0.5 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #FFD700, #FFA500)' }}></div>
+          <div className="w-24 h-0.5 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #A855F7, #FFD700, #FFA500)' }}></div>
           
           <div className="space-y-6">
             {education.map((edu) => (
               <Card
                 key={edu.id}
                 className="p-8 transition-all duration-500 hover:shadow-2xl hover:scale-102"
-                style={{ backgroundColor: '#000000', borderLeft: '4px solid #FFA500' }}
+                style={{ backgroundColor: '#000000', borderLeft: '4px solid #A855F7' }}
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg transition-all duration-300" style={{ backgroundColor: '#FFA500' }}>
+                  <div className="p-3 rounded-lg transition-all duration-300" style={{ backgroundColor: '#A855F7' }}>
                     <GraduationCap size={24} color="#000000" />
                   </div>
                   
@@ -58,13 +58,15 @@ const Education = ({ education, personalData }) => {
                       </span>
                     </div>
                     
-                    <p className="text-lg mb-2 transition-all duration-300" style={{ color: '#FFA500', fontFamily: 'JetBrains Mono, monospace' }}>
+                    <p className="text-lg mb-2 transition-all duration-300" style={{ color: '#A855F7', fontFamily: 'JetBrains Mono, monospace' }}>
                       {edu.institution}
                     </p>
                     
-                    <p className="mb-2 font-medium transition-all duration-300" style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif', opacity: 0.9 }}>
-                      GPA: {edu.gpa}
-                    </p>
+                    {edu.gpa && (
+                      <p className="mb-2 font-medium transition-all duration-300" style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif', opacity: 0.9 }}>
+                        GPA: {edu.gpa}
+                      </p>
+                    )}
                     
                     <p className="transition-all duration-300" style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif', opacity: 0.85 }}>
                       {edu.relevant}
