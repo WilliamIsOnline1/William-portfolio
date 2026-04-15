@@ -4,14 +4,14 @@ import { Card } from './ui/card';
 
 const Education = ({ education, personalData }) => {
   return (
-    <section id="education" className="py-24 relative" style={{ backgroundColor: '#1F2937' }}>
+    <section id="education" className="py-24 relative" style={{ backgroundColor: '#0A0A0A' }}>
       <div className="absolute top-6 left-1/2 transform -translate-x-1/2 flex items-center gap-2 opacity-30">
         <img
           src={personalData.image}
           alt={personalData.name}
           className="w-6 h-6 rounded-full object-cover"
         />
-        <span className="text-xs" style={{ color: '#E5E7EB', fontFamily: 'JetBrains Mono, monospace' }}>
+        <span className="text-xs" style={{ color: '#FFFFFF', fontFamily: 'JetBrains Mono, monospace' }}>
           {personalData.name}
         </span>
       </div>
@@ -20,49 +20,53 @@ const Education = ({ education, personalData }) => {
         <div className="max-w-4xl mx-auto">
           <h2
             className="text-5xl font-bold mb-6 text-center transition-all duration-500"
-            style={{ color: '#E5E7EB', fontFamily: 'Inter, sans-serif' }}
+            style={{
+              color: '#FFFFFF',
+              fontFamily: 'Inter, sans-serif',
+              textShadow: '0 0 15px rgba(255, 215, 0, 0.4), 0 0 30px rgba(255, 165, 0, 0.2)'
+            }}
           >
             Education
           </h2>
-          <div className="w-24 h-0.5 mx-auto mb-12 transition-all duration-500" style={{ backgroundColor: '#9CA3AF' }}></div>
+          <div className="w-24 h-0.5 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #FFD700, #FFA500)' }}></div>
           
           <div className="space-y-6">
             {education.map((edu) => (
               <Card
                 key={edu.id}
                 className="p-8 transition-all duration-500 hover:shadow-2xl hover:scale-102"
-                style={{ backgroundColor: '#111827', borderLeft: '4px solid #9CA3AF' }}
+                style={{ backgroundColor: '#000000', borderLeft: '4px solid #FFA500' }}
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg transition-all duration-300" style={{ backgroundColor: '#9CA3AF' }}>
-                    <GraduationCap size={24} color="#111827" />
+                  <div className="p-3 rounded-lg transition-all duration-300" style={{ backgroundColor: '#FFA500' }}>
+                    <GraduationCap size={24} color="#000000" />
                   </div>
                   
                   <div className="flex-1">
                     <div className="flex flex-wrap justify-between items-start mb-3">
                       <h3
                         className="text-2xl font-bold transition-all duration-300"
-                        style={{ color: '#E5E7EB', fontFamily: 'Inter, sans-serif' }}
+                        style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif' }}
                       >
                         {edu.degree}
                       </h3>
                       <span
                         className="text-sm font-medium px-4 py-1.5 rounded-full transition-all duration-300"
-                        style={{ backgroundColor: '#1F2937', color: '#9CA3AF', fontFamily: 'JetBrains Mono, monospace' }}
+                        style={{ backgroundColor: '#FFD700', color: '#000000', fontFamily: 'JetBrains Mono, monospace', fontWeight: '600' }}
                       >
                         {edu.duration}
                       </span>
                     </div>
                     
-                    <p className="text-lg mb-2 transition-all duration-300" style={{ color: '#9CA3AF', fontFamily: 'JetBrains Mono, monospace' }}>
+                    <p className="text-lg mb-2 transition-all duration-300" style={{ color: '#FFA500', fontFamily: 'JetBrains Mono, monospace' }}>
                       {edu.institution}
                     </p>
                     
-                    <p className="mb-2 font-medium transition-all duration-300" style={{ color: '#9CA3AF', fontFamily: 'Inter, sans-serif' }}>
+                    <p className="mb-2 font-medium transition-all duration-300" style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif', opacity: 0.9 }}>
                       GPA: {edu.gpa}
                     </p>
                     
-                    <p className="transition-all duration-300" style={{ color: '#9CA3AF', fontFamily: 'Inter, sans-serif' }}>
+                    <p className="transition-all duration-300" style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif', opacity: 0.85 }}>
                       {edu.relevant}
                     </p>
                   </div>

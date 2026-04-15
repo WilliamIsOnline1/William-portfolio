@@ -7,7 +7,6 @@ const Header = ({ data }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Only show header after scrolling past hero section (viewport height)
       setIsVisible(window.scrollY > window.innerHeight * 0.8);
     };
     window.addEventListener('scroll', handleScroll);
@@ -28,8 +27,9 @@ const Header = ({ data }) => {
     <header
       className="fixed top-0 left-0 right-0 z-50 py-3 shadow-lg transition-all duration-500"
       style={{
-        backgroundColor: 'rgba(17, 24, 39, 0.95)',
+        backgroundColor: 'rgba(0, 0, 0, 0.95)',
         backdropFilter: 'blur(10px)',
+        borderBottom: '1px solid #FFA500',
       }}
     >
       <div className="container mx-auto px-6">
@@ -42,11 +42,11 @@ const Header = ({ data }) => {
               src={data.image}
               alt={data.name}
               className="w-10 h-10 rounded-full object-cover border-2 transition-all duration-500"
-              style={{ borderColor: '#9CA3AF' }}
+              style={{ borderColor: '#FFD700' }}
             />
             <h3
               className="text-lg font-bold transition-all duration-500"
-              style={{ color: '#E5E7EB', fontFamily: 'Inter, sans-serif' }}
+              style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif' }}
             >
               {data.name}
             </h3>
@@ -58,7 +58,7 @@ const Header = ({ data }) => {
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
                 className="text-sm font-medium transition-all duration-300 hover:opacity-70"
-                style={{ color: '#9CA3AF', fontFamily: 'Inter, sans-serif' }}
+                style={{ color: '#FFD700', fontFamily: 'Inter, sans-serif' }}
               >
                 {item}
               </button>
@@ -68,7 +68,7 @@ const Header = ({ data }) => {
           <button
             className="md:hidden p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            style={{ color: '#E5E7EB' }}
+            style={{ color: '#FFFFFF' }}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -81,7 +81,7 @@ const Header = ({ data }) => {
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
                 className="block w-full text-left px-4 py-2 text-sm font-medium transition-all duration-300 hover:opacity-70"
-                style={{ color: '#9CA3AF', fontFamily: 'Inter, sans-serif' }}
+                style={{ color: '#FFD700', fontFamily: 'Inter, sans-serif' }}
               >
                 {item}
               </button>
