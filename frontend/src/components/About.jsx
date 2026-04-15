@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = ({ content, personalData }) => {
   return (
-    <section id="about" className="py-24 relative" style={{ backgroundColor: '#1E293B' }}>
+    <section id="about" className="py-24 relative" style={{ backgroundColor: '#141B2D' }}>
       <div className="absolute top-6 left-1/2 transform -translate-x-1/2 flex items-center gap-2 opacity-30">
         <img
           src={personalData.image}
@@ -21,16 +21,16 @@ const About = ({ content, personalData }) => {
             style={{
               color: '#FFFFFF',
               fontFamily: 'Inter, sans-serif',
-              textShadow: '0 0 20px rgba(255, 255, 255, 0.3)'
+              textShadow: '0 0 30px rgba(255, 255, 255, 0.5), 0 0 60px rgba(157, 180, 160, 0.3)'
             }}
           >
             About Me
           </h2>
-          <div className="w-24 h-1 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #8B5CF6, #3B82F6)' }}></div>
+          <div className="w-24 h-1 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #9DB4A0, #7C98AB)' }}></div>
           
           <p
             className="text-lg leading-relaxed text-center transition-all duration-500"
-            style={{ color: '#E2E8F0', fontFamily: 'Inter, sans-serif', lineHeight: '1.8' }}
+            style={{ color: '#E5E7EB', fontFamily: 'Inter, sans-serif', lineHeight: '1.8' }}
           >
             {content}
           </p>

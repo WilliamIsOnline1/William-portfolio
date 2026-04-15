@@ -27,9 +27,9 @@ const Header = ({ data }) => {
     <header
       className="fixed top-0 left-0 right-0 z-50 py-4 shadow-lg transition-all duration-500"
       style={{
-        backgroundColor: 'rgba(15, 23, 42, 0.95)',
+        backgroundColor: 'rgba(10, 14, 26, 0.95)',
         backdropFilter: 'blur(10px)',
-        borderBottom: '1px solid rgba(59, 130, 246, 0.3)',
+        borderBottom: '1px solid rgba(124, 152, 171, 0.2)',
       }}
     >
       <div className="container mx-auto px-6">
@@ -42,7 +42,7 @@ const Header = ({ data }) => {
               src={data.image}
               alt={data.name}
               className="w-10 h-10 rounded-full object-cover border-2 transition-all duration-500"
-              style={{ borderColor: '#8B5CF6' }}
+              style={{ borderColor: '#9DB4A0' }}
             />
             <h3
               className="text-lg font-semibold transition-all duration-500"
@@ -58,7 +58,7 @@ const Header = ({ data }) => {
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
                 className="text-sm font-medium transition-all duration-300 hover:opacity-70"
-                style={{ color: '#94A3B8', fontFamily: 'Inter, sans-serif' }}
+                style={{ color: '#9DB4A0', fontFamily: 'Inter, sans-serif' }}
               >
                 {item}
               </button>
@@ -81,7 +81,7 @@ const Header = ({ data }) => {
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
                 className="block w-full text-left px-4 py-2 text-sm font-medium transition-all duration-300 hover:opacity-70"
-                style={{ color: '#94A3B8', fontFamily: 'Inter, sans-serif' }}
+                style={{ color: '#9DB4A0', fontFamily: 'Inter, sans-serif' }}
               >
                 {item}
               </button>
