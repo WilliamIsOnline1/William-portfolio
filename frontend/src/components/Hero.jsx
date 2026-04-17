@@ -25,7 +25,7 @@ const Hero = ({ data }) => {
                 src="https://customer-assets.emergentagent.com/job_profile-portal-52/artifacts/pb72rl1p_professional%20photo.jpg"
                 alt="William Davis"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: 'center center' }}
+                style={{ objectPosition: '45% center' }}
               />
             </div>
           </div>
