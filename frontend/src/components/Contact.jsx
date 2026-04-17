@@ -3,8 +3,21 @@ import { Mail } from 'lucide-react';
 
 const Contact = ({ personalInfo }) => {
   return (
-    <section id="contact" className="py-32 relative" style={{ backgroundColor: '#0D1219' }}>
-      <div className="container mx-auto px-6">
+    <section 
+      id="contact" 
+      className="py-32 relative" 
+      style={{ 
+        backgroundColor: '#0D1219',
+        backgroundImage: 'url(https://customer-assets.emergentagent.com/job_profile-portal-52/artifacts/zxvweodz_grass.JPG)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Dark overlay to ensure text readability */}
+      <div className="absolute inset-0" style={{ backgroundColor: 'rgba(13, 18, 25, 0.85)' }}></div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Glowing "Say Hello" text */}
           <h2

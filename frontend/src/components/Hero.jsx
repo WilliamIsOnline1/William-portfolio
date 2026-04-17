@@ -15,8 +15,21 @@ const Hero = ({ data }) => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center" style={{ backgroundColor: '#05080F' }}>
-      <div className="container mx-auto px-6 py-32">
+    <section 
+      id="hero" 
+      className="min-h-screen flex items-center justify-center relative" 
+      style={{ 
+        backgroundColor: '#05080F',
+        backgroundImage: 'url(https://customer-assets.emergentagent.com/job_profile-portal-52/artifacts/zxvweodz_grass.JPG)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Dark overlay to ensure text readability */}
+      <div className="absolute inset-0" style={{ backgroundColor: 'rgba(5, 8, 15, 0.85)' }}></div>
+      
+      <div className="container mx-auto px-6 py-32 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           {/* Professional Photo */}
           <div className="mb-8">
