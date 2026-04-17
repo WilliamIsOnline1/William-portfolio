@@ -17,17 +17,17 @@ const Education = ({ education }) => {
           >
             Education
           </h2>
-          <div className="w-24 h-1 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #7A9E7E, #5A7A8A)' }}></div>
+          <div className="w-24 h-1 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #82AC87, #648CB0)' }}></div>
           
           <div className="space-y-6">
             {education.map((edu) => (
               <Card
                 key={edu.id}
                 className="p-8 transition-all duration-500 hover:shadow-xl hover:scale-102"
-                style={{ backgroundColor: '#05080F', borderLeft: '4px solid #7A9E7E' }}
+                style={{ backgroundColor: '#05080F', borderLeft: '4px solid #82AC87' }}
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg transition-all duration-300" style={{ backgroundColor: '#7A9E7E' }}>
+                  <div className="p-3 rounded-lg transition-all duration-300" style={{ backgroundColor: '#82AC87' }}>
                     <GraduationCap size={24} color="#05080F" />
                   </div>
                   
@@ -41,13 +41,13 @@ const Education = ({ education }) => {
                       </h3>
                       <span
                         className="text-sm font-medium px-4 py-1.5 rounded-full transition-all duration-300"
-                        style={{ backgroundColor: '#7A6850', color: '#FFFFFF', fontFamily: 'Inter, sans-serif', fontWeight: '600' }}
+                        style={{ backgroundColor: '#8B7358', color: '#FFFFFF', fontFamily: 'Inter, sans-serif', fontWeight: '600' }}
                       >
                         {edu.duration}
                       </span>
                     </div>
                     
-                    <p className="text-lg mb-2 transition-all duration-300" style={{ color: '#7A9E7E', fontFamily: 'Inter, sans-serif' }}>
+                    <p className="text-lg mb-2 transition-all duration-300" style={{ color: '#82AC87', fontFamily: 'Inter, sans-serif' }}>
                       {edu.institution}
                     </p>
                     

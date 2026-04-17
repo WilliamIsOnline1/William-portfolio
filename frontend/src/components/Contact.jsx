@@ -32,14 +32,14 @@ const Contact = ({ personalInfo }) => {
               className="inline-flex items-center gap-4 px-12 py-6 rounded-lg transition-all duration-500 hover:shadow-2xl hover:scale-105"
               style={{
                 backgroundColor: '#05080F',
-                border: '2px solid #7A9E7E',
+                border: '2px solid #82AC87',
               }}
             >
-              <div className="p-3 rounded-lg" style={{ backgroundColor: '#7A9E7E' }}>
+              <div className="p-3 rounded-lg" style={{ backgroundColor: '#82AC87' }}>
                 <Mail size={28} color="#05080F" />
               </div>
               <div className="text-left">
-                <p className="text-sm mb-1" style={{ color: '#5A7A8A', fontFamily: 'Inter, sans-serif' }}>Email</p>
+                <p className="text-sm mb-1" style={{ color: '#648CB0', fontFamily: 'Inter, sans-serif' }}>Email</p>
                 <p className="font-medium text-xl" style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif' }}>
                   {personalInfo.email}
                 </p>

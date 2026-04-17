@@ -17,17 +17,17 @@ const Experience = ({ experiences, skills }) => {
           >
             Experience
           </h2>
-          <div className="w-24 h-1 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #7A9E7E, #5A7A8A)' }}></div>
+          <div className="w-24 h-1 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #82AC87, #648CB0)' }}></div>
           
           <div className="space-y-6">
             {experiences.map((exp) => (
               <Card
                 key={exp.id}
                 className="p-8 transition-all duration-500 hover:shadow-xl hover:scale-102"
-                style={{ backgroundColor: '#0D1219', borderLeft: '4px solid #5A7A8A', border: 'none' }}
+                style={{ backgroundColor: '#0D1219', borderLeft: '4px solid #648CB0', border: 'none' }}
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg transition-all duration-300" style={{ backgroundColor: '#5A7A8A' }}>
+                  <div className="p-3 rounded-lg transition-all duration-300" style={{ backgroundColor: '#648CB0' }}>
                     <Briefcase size={24} color="#FFFFFF" />
                   </div>
                   
@@ -41,13 +41,13 @@ const Experience = ({ experiences, skills }) => {
                       </h3>
                       <span
                         className="text-sm font-medium px-4 py-1.5 rounded-full transition-all duration-300"
-                        style={{ backgroundColor: '#7A6850', color: '#FFFFFF', fontFamily: 'Inter, sans-serif', fontWeight: '600' }}
+                        style={{ backgroundColor: '#8B7358', color: '#FFFFFF', fontFamily: 'Inter, sans-serif', fontWeight: '600' }}
                       >
                         {exp.duration}
                       </span>
                     </div>
                     
-                    <p className="text-lg mb-4 transition-all duration-300" style={{ color: '#7A9E7E', fontFamily: 'Inter, sans-serif', fontWeight: '500' }}>
+                    <p className="text-lg mb-4 transition-all duration-300" style={{ color: '#82AC87', fontFamily: 'Inter, sans-serif', fontWeight: '500' }}>
                       {exp.company}
                     </p>
                     
@@ -58,7 +58,7 @@ const Experience = ({ experiences, skills }) => {
                     <div className="space-y-2">
                       {exp.achievements.map((achievement, idx) => (
                         <div key={idx} className="flex items-start gap-2 transition-all duration-300">
-                          <CheckCircle size={18} className="mt-1 flex-shrink-0" style={{ color: '#5A7A8A' }} />
+                          <CheckCircle size={18} className="mt-1 flex-shrink-0" style={{ color: '#648CB0' }} />
                           <span style={{ color: '#D1D9E6', fontFamily: 'Inter, sans-serif' }}>{achievement}</span>
                         </div>
                       ))}
@@ -83,7 +83,7 @@ const Experience = ({ experiences, skills }) => {
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div>
-                <h4 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: '#7A9E7E', fontFamily: 'Inter, sans-serif' }}>
+                <h4 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: '#82AC87', fontFamily: 'Inter, sans-serif' }}>
                   Technical
                 </h4>
                 <div className="flex flex-wrap gap-2">
@@ -91,7 +91,7 @@ const Experience = ({ experiences, skills }) => {
                     <span
                       key={index}
                       className="px-3 py-1.5 text-sm rounded-md transition-all duration-300 hover:scale-105"
-                      style={{ backgroundColor: '#0D1219', color: '#FFFFFF', border: '1px solid #7A9E7E', fontFamily: 'Inter, sans-serif' }}
+                      style={{ backgroundColor: '#0D1219', color: '#FFFFFF', border: '1px solid #82AC87', fontFamily: 'Inter, sans-serif' }}
                     >
                       {skill}
                     </span>
@@ -100,7 +100,7 @@ const Experience = ({ experiences, skills }) => {
               </div>
               
               <div>
-                <h4 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: '#5A7A8A', fontFamily: 'Inter, sans-serif' }}>
+                <h4 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: '#648CB0', fontFamily: 'Inter, sans-serif' }}>
                   Software & Tools
                 </h4>
                 <div className="flex flex-wrap gap-2">
@@ -108,7 +108,7 @@ const Experience = ({ experiences, skills }) => {
                     <span
                       key={index}
                       className="px-3 py-1.5 text-sm rounded-md transition-all duration-300 hover:scale-105"
-                      style={{ backgroundColor: '#0D1219', color: '#FFFFFF', border: '1px solid #5A7A8A', fontFamily: 'Inter, sans-serif' }}
+                      style={{ backgroundColor: '#0D1219', color: '#FFFFFF', border: '1px solid #648CB0', fontFamily: 'Inter, sans-serif' }}
                     >
                       {skill}
                     </span>
@@ -117,7 +117,7 @@ const Experience = ({ experiences, skills }) => {
               </div>
               
               <div>
-                <h4 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: '#7A6850', fontFamily: 'Inter, sans-serif' }}>
+                <h4 className="text-sm font-bold mb-3 uppercase tracking-wider" style={{ color: '#8B7358', fontFamily: 'Inter, sans-serif' }}>
                   Soft Skills
                 </h4>
                 <div className="flex flex-wrap gap-2">
@@ -125,7 +125,7 @@ const Experience = ({ experiences, skills }) => {
                     <span
                       key={index}
                       className="px-3 py-1.5 text-sm rounded-md transition-all duration-300 hover:scale-105"
-                      style={{ backgroundColor: '#0D1219', color: '#FFFFFF', border: '1px solid #7A6850', fontFamily: 'Inter, sans-serif' }}
+                      style={{ backgroundColor: '#0D1219', color: '#FFFFFF', border: '1px solid #8B7358', fontFamily: 'Inter, sans-serif' }}
                     >
                       {skill}
                     </span>

@@ -15,7 +15,7 @@ const About = ({ content }) => {
           >
             About Me
           </h2>
-          <div className="w-24 h-1 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #7A9E7E, #5A7A8A)' }}></div>
+          <div className="w-24 h-1 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #82AC87, #648CB0)' }}></div>
           
           <p
             className="text-lg leading-relaxed text-center transition-all duration-500"

@@ -17,18 +17,18 @@ const Awards = ({ awards }) => {
           >
             Notable Awards
           </h2>
-          <div className="w-24 h-1 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #7A9E7E, #7A6850)' }}></div>
+          <div className="w-24 h-1 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #82AC87, #8B7358)' }}></div>
           
           <div className="grid md:grid-cols-1 gap-6 max-w-3xl mx-auto">
             {awards.map((award) => (
-              <Card key={award.id} className="p-6 transition-all duration-500 hover:shadow-xl" style={{ borderLeft: '4px solid #7A6850', backgroundColor: '#0D1219' }}>
+              <Card key={award.id} className="p-6 transition-all duration-500 hover:shadow-xl" style={{ borderLeft: '4px solid #8B7358', backgroundColor: '#0D1219' }}>
                 <div className="flex items-start gap-4">
-                  <Medal size={28} className="mt-1 flex-shrink-0" style={{ color: '#7A6850' }} />
+                  <Medal size={28} className="mt-1 flex-shrink-0" style={{ color: '#8B7358' }} />
                   <div>
                     <h4 className="text-xl font-bold mb-2" style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif' }}>
                       {award.title}
                     </h4>
-                    <p className="text-base mb-1" style={{ color: '#7A9E7E', fontFamily: 'Inter, sans-serif' }}>
+                    <p className="text-base mb-1" style={{ color: '#82AC87', fontFamily: 'Inter, sans-serif' }}>
                       {award.organization}
                     </p>
                     <p className="text-sm" style={{ color: '#C1C9D2', opacity: 0.7 }}>

@@ -52,7 +52,7 @@ const Header = ({ data }) => {
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
                 className="text-sm font-medium transition-all duration-300 hover:opacity-70"
-                style={{ color: '#7A9E7E', fontFamily: 'Inter, sans-serif' }}
+                style={{ color: '#82AC87', fontFamily: 'Inter, sans-serif' }}
               >
                 {item}
               </button>
@@ -75,7 +75,7 @@ const Header = ({ data }) => {
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
                 className="block w-full text-left px-4 py-2 text-sm font-medium transition-all duration-300 hover:opacity-70"
-                style={{ color: '#7A9E7E', fontFamily: 'Inter, sans-serif' }}
+                style={{ color: '#82AC87', fontFamily: 'Inter, sans-serif' }}
               >
                 {item}
               </button>

@@ -20,14 +20,14 @@ const Hero = ({ data }) => {
         <div className="max-w-3xl mx-auto text-center">
           {/* Simple Food Science Icon */}
           <div className="mb-8">
-            <div className="w-48 h-48 mx-auto rounded-full flex items-center justify-center transition-all duration-500 hover:scale-105" style={{ backgroundColor: '#0D1219', border: '3px solid #7A9E7E', boxShadow: '0 0 40px rgba(122, 158, 126, 0.2)' }}>
-              <Beaker size={80} style={{ color: '#7A9E7E' }} strokeWidth={1.5} />
+            <div className="w-48 h-48 mx-auto rounded-full flex items-center justify-center transition-all duration-500 hover:scale-105" style={{ backgroundColor: '#0D1219', border: '3px solid #82AC87', boxShadow: '0 0 40px rgba(122, 158, 126, 0.2)' }}>
+              <Beaker size={80} style={{ color: '#82AC87' }} strokeWidth={1.5} />
             </div>
           </div>
           
           <p
             className="text-xl mb-3 transition-all duration-500"
-            style={{ color: '#5A7A8A', fontFamily: 'Inter, sans-serif', fontWeight: '400' }}
+            style={{ color: '#648CB0', fontFamily: 'Inter, sans-serif', fontWeight: '400' }}
           >
             Hi, I'm
           </p>
@@ -46,7 +46,7 @@ const Hero = ({ data }) => {
           
           <p
             className="text-2xl md:text-3xl mb-8"
-            style={{ color: '#7A9E7E', fontFamily: 'Inter, sans-serif', fontWeight: '500' }}
+            style={{ color: '#82AC87', fontFamily: 'Inter, sans-serif', fontWeight: '500' }}
           >
             {data.title}
           </p>
@@ -64,8 +64,8 @@ const Hero = ({ data }) => {
               className="px-8 py-6 text-base font-medium rounded-lg transition-all duration-500 hover:shadow-xl hover:scale-105"
               style={{
                 backgroundColor: 'transparent',
-                color: '#7A9E7E',
-                border: '2px solid #7A9E7E',
+                color: '#82AC87',
+                border: '2px solid #82AC87',
                 fontFamily: 'Inter, sans-serif'
               }}
             >
@@ -76,8 +76,8 @@ const Hero = ({ data }) => {
               className="px-8 py-6 text-base font-medium rounded-lg transition-all duration-500 hover:shadow-xl hover:scale-105"
               style={{
                 backgroundColor: 'transparent',
-                color: '#5A7A8A',
-                border: '2px solid #5A7A8A',
+                color: '#648CB0',
+                border: '2px solid #648CB0',
                 fontFamily: 'Inter, sans-serif'
               }}
             >
@@ -87,7 +87,7 @@ const Hero = ({ data }) => {
               onClick={handleDownloadResume}
               className="px-8 py-6 text-base font-medium rounded-lg transition-all duration-500 hover:shadow-xl hover:scale-105"
               style={{
-                backgroundColor: '#7A6850',
+                backgroundColor: '#8B7358',
                 color: '#FFFFFF',
                 border: 'none',
                 fontFamily: 'Inter, sans-serif',
