@@ -47,6 +47,93 @@ button:hover, a:hover {
   animation: fadeIn 1s ease-out forwards;
 }
 
+/* Minimal ambient background animation */
+@keyframes ambientFloat {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.03;
+  }
+  33% {
+    transform: translate(30px, -30px) scale(1.1);
+    opacity: 0.05;
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+    opacity: 0.04;
+  }
+}
+
+@keyframes ambientFloat2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.02;
+  }
+  33% {
+    transform: translate(-40px, 30px) scale(1.2);
+    opacity: 0.04;
+  }
+  66% {
+    transform: translate(25px, -25px) scale(0.95);
+    opacity: 0.03;
+  }
+}
+
+@keyframes ambientGradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.ambient-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.ambient-bg::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at 20% 30%,
+    rgba(130, 172, 135, 0.03) 0%,
+    transparent 50%
+  ),
+  radial-gradient(
+    circle at 80% 70%,
+    rgba(100, 140, 176, 0.03) 0%,
+    transparent 50%
+  );
+  animation: ambientFloat 20s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.ambient-bg::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at 70% 40%,
+    rgba(139, 115, 88, 0.02) 0%,
+    transparent 50%
+  ),
+  radial-gradient(
+    circle at 30% 80%,
+    rgba(130, 172, 135, 0.02) 0%,
+    transparent 50%
+  );
+  animation: ambientFloat2 25s ease-in-out infinite;
+  pointer-events: none;
+}
+
 /* Tight fire-like glowing animation - stays close to border */
 @keyframes tightFireGlow {
   0% {
