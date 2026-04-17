@@ -33,7 +33,14 @@ const Hero = ({ data }) => {
         <div className="max-w-3xl mx-auto text-center">
           {/* Professional Photo */}
           <div className="mb-8">
-            <div className="w-48 h-48 mx-auto rounded-full overflow-hidden transition-all duration-500 hover:scale-105" style={{ border: '3px solid #82AC87', boxShadow: '0 0 40px rgba(122, 158, 126, 0.2)' }}>
+            <div 
+              className="w-48 h-48 mx-auto rounded-full overflow-hidden transition-all duration-500 hover:scale-105 fire-glow" 
+              style={{ 
+                border: '3px solid #82AC87',
+                boxShadow: '0 0 40px rgba(130, 172, 135, 0.6), 0 0 80px rgba(130, 172, 135, 0.4)',
+                animation: 'fireGlow 3s ease-in-out infinite'
+              }}
+            >
               <img
                 src="https://customer-assets.emergentagent.com/job_profile-portal-52/artifacts/pb72rl1p_professional%20photo.jpg"
                 alt="William Davis"
