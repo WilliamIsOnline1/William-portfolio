@@ -30,7 +30,7 @@ const About = ({ content }) => {
               <img
                 src="https://customer-assets.emergentagent.com/job_profile-portal-52/artifacts/6nzux661_professional%20photo%20%282%29.jpg"
                 alt="William Davis"
-                className="w-20 h-20 rounded-full object-cover border-3 transition-all duration-500 hover:scale-105"
+                className="w-24 h-24 rounded-full object-cover border-3 transition-all duration-500 hover:scale-105"
                 style={{
                   borderColor: '#82AC87',
                   boxShadow: '0 0 20px rgba(130, 172, 135, 0.3)',
