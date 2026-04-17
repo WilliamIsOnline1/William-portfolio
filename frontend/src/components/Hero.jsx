@@ -34,10 +34,10 @@ const Hero = ({ data }) => {
           {/* Professional Photo */}
           <div className="mb-8">
             <div 
-              className="w-48 h-48 mx-auto rounded-full overflow-hidden relative fire-glow" 
+              className="w-48 h-48 mx-auto rounded-full overflow-hidden relative" 
               style={{ 
                 border: '3px solid #82AC87',
-                animation: 'fireGlow 4s ease-in-out infinite, fireRotate 8s linear infinite'
+                animation: 'tightFireGlow 4s ease-in-out infinite'
               }}
             >
               <img
