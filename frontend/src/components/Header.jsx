@@ -4,10 +4,13 @@ import { Menu, X } from 'lucide-react';
 const Header = ({ data }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsVisible(window.scrollY > window.innerHeight * 0.8);
+      const scrollY = window.scrollY;
+      setIsVisible(scrollY > window.innerHeight * 0.8);
+      setScrolled(scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -25,11 +28,12 @@ const Header = ({ data }) => {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 py-4 shadow-lg transition-all duration-500"
+      className={`fixed top-0 left-0 right-0 z-50 py-4 shadow-lg transition-all duration-500 ${scrolled ? 'header-scrolled' : ''}`}
       style={{
         backgroundColor: 'rgba(5, 8, 15, 0.95)',
         backdropFilter: 'blur(10px)',
         borderBottom: '1px solid rgba(90, 110, 120, 0.2)',
+        transform: scrolled ? 'translateY(0)' : 'translateY(-5px)',
       }}
     >
       <div className="container mx-auto px-6">
@@ -51,8 +55,13 @@ const Header = ({ data }) => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="text-sm font-medium transition-all duration-300 hover:opacity-70"
-                style={{ color: '#82AC87', fontFamily: 'Inter, sans-serif' }}
+                className="nav-link text-sm font-medium transition-all duration-300 hover:scale-105"
+                style={{ 
+                  color: '#6B7280',
+                  fontFamily: 'Inter, sans-serif',
+                  textShadow: '0 0 8px rgba(192, 192, 192, 0.4), 0 1px 2px rgba(255, 255, 255, 0.3)',
+                  fontWeight: '600'
+                }}
               >
                 {item}
               </button>
@@ -75,7 +84,12 @@ const Header = ({ data }) => {
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
                 className="block w-full text-left px-4 py-2 text-sm font-medium transition-all duration-300 hover:opacity-70"
-                style={{ color: '#82AC87', fontFamily: 'Inter, sans-serif' }}
+                style={{ 
+                  color: '#6B7280',
+                  fontFamily: 'Inter, sans-serif',
+                  textShadow: '0 0 8px rgba(192, 192, 192, 0.4)',
+                  fontWeight: '600'
+                }}
               >
                 {item}
               </button>

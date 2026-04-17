@@ -47,6 +47,61 @@ button:hover, a:hover {
   animation: fadeIn 1s ease-out forwards;
 }
 
+/* Navigation bar silver shine effect */
+.nav-link {
+  position: relative;
+  background: linear-gradient(135deg, #6B7280 0%, #9CA3AF 50%, #6B7280 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% auto;
+}
+
+.nav-link:hover {
+  animation: shimmer 2s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* Subtle scroll pop animation for sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-reveal {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Header flow on scroll */
+.header-scrolled {
+  animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* Laser green blinking dot animation */
 @keyframes laserBlink {
   0%, 100% {

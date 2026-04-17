@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "@/App.css";
 import { resumeData } from "./mockData";
 import Header from "./components/Header";
@@ -13,6 +13,32 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
+  useEffect(() => {
+    // Intersection Observer for scroll animations
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('scroll-reveal');
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      }
+    );
+
+    // Observe all sections
+    const sections = document.querySelectorAll('section');
+    sections.forEach((section) => {
+      section.style.opacity = '0';
+      observer.observe(section);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="App">
       <Header data={resumeData.personal} />
