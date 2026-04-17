@@ -34,8 +34,8 @@ const About = ({ content }) => {
                 style={{
                   borderColor: '#82AC87',
                   boxShadow: '0 0 20px rgba(130, 172, 135, 0.3)',
-                  objectPosition: 'center 10%',
-                  transform: 'scale(1.3)'
+                  objectPosition: 'center 5%',
+                  transform: 'scale(1.6)'
                 }}
               />
             </div>
