@@ -2,21 +2,8 @@ import React from 'react';
 
 const About = ({ content }) => {
   return (
-    <section 
-      id="about" 
-      className="py-24 relative section-blend-top section-blend-bottom" 
-      style={{ 
-        backgroundColor: '#0D1219',
-        backgroundImage: 'url(https://customer-assets.emergentagent.com/job_profile-portal-52/artifacts/zdxrlalz_water.gif)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
-      {/* Super dark overlay - you can barely see the movement */}
-      <div className="absolute inset-0" style={{ backgroundColor: 'rgba(13, 18, 25, 0.92)', zIndex: 1 }}></div>
-      
-      <div className="container mx-auto px-6 relative z-10">
+    <section id="about" className="py-24 relative ambient-bg section-blend-top section-blend-bottom" style={{ backgroundColor: '#0D1219' }}>
+      <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <h2
             className="text-5xl font-bold mb-6 text-center transition-all duration-500"
