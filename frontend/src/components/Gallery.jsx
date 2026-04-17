@@ -45,24 +45,24 @@ const Gallery = () => {
               />
             </div>
             
-            {/* Left Arrow - larger and more transparent */}
+            {/* Left Arrow - positioned away from photo, stretched vertically, more transparent */}
             <button
               onClick={prevSlide}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 p-2 transition-all duration-300 hover:scale-110"
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 transition-all duration-300 hover:scale-110"
               style={{ backgroundColor: 'transparent' }}
               aria-label="Previous image"
             >
-              <ChevronLeft size={48} color="#F8F9FA" style={{ opacity: 0.6 }} className="hover:opacity-100 transition-opacity duration-300" />
+              <ChevronLeft size={48} color="#F8F9FA" style={{ opacity: 0.4, transform: 'scaleY(1.3)' }} className="hover:opacity-100 transition-opacity duration-300" />
             </button>
             
-            {/* Right Arrow - larger and more transparent */}
+            {/* Right Arrow - positioned away from photo, stretched vertically, more transparent */}
             <button
               onClick={nextSlide}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 p-2 transition-all duration-300 hover:scale-110"
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 transition-all duration-300 hover:scale-110"
               style={{ backgroundColor: 'transparent' }}
               aria-label="Next image"
             >
-              <ChevronRight size={48} color="#F8F9FA" style={{ opacity: 0.6 }} className="hover:opacity-100 transition-opacity duration-300" />
+              <ChevronRight size={48} color="#F8F9FA" style={{ opacity: 0.4, transform: 'scaleY(1.3)' }} className="hover:opacity-100 transition-opacity duration-300" />
             </button>
             
             {/* Dots Indicator */}
