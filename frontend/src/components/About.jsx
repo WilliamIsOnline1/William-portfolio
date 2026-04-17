@@ -24,18 +24,17 @@ const About = ({ content }) => {
             {content}
           </p>
           
-          {/* Small photo bubble at bottom - zoomed in on face */}
+          {/* Small photo bubble at bottom */}
           <div className="flex justify-center mt-12">
             <div className="relative">
               <img
-                src="https://customer-assets.emergentagent.com/job_profile-portal-52/artifacts/b2ahjr7c_Professional%20headshot.jpg"
+                src="https://customer-assets.emergentagent.com/job_profile-portal-52/artifacts/6nzux661_professional%20photo%20%282%29.jpg"
                 alt="William Davis"
-                className="w-32 h-32 rounded-full object-cover border-3 transition-all duration-500 hover:scale-105"
+                className="w-20 h-20 rounded-full object-cover border-3 transition-all duration-500 hover:scale-105"
                 style={{
                   borderColor: '#82AC87',
                   boxShadow: '0 0 20px rgba(130, 172, 135, 0.3)',
-                  objectPosition: 'center 25%',
-                  transform: 'scale(2.2)'
+                  objectPosition: 'center center'
                 }}
               />
             </div>
