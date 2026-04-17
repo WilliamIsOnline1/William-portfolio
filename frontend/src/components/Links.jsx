@@ -28,7 +28,7 @@ const Links = () => {
   ];
 
   return (
-    <section id="links" className="py-24 relative ambient-bg" style={{ backgroundColor: '#0D1219' }}>
+    <section id="links" className="py-24 relative ambient-bg section-blend-top section-blend-bottom" style={{ backgroundColor: '#0D1219' }}>
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <h2

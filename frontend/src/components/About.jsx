@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = ({ content }) => {
   return (
-    <section id="about" className="py-24 relative ambient-bg" style={{ backgroundColor: '#0D1219' }}>
+    <section id="about" className="py-24 relative ambient-bg section-blend-top section-blend-bottom" style={{ backgroundColor: '#0D1219' }}>
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <h2
