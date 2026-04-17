@@ -24,7 +24,7 @@ const About = ({ content }) => {
             {content}
           </p>
           
-          {/* Small photo bubble at bottom */}
+          {/* Small photo bubble at bottom - zoomed in on face */}
           <div className="flex justify-center mt-12">
             <div className="relative">
               <img
@@ -34,7 +34,8 @@ const About = ({ content }) => {
                 style={{
                   borderColor: '#82AC87',
                   boxShadow: '0 0 20px rgba(130, 172, 135, 0.3)',
-                  objectPosition: 'center 30%'
+                  objectPosition: 'center 10%',
+                  transform: 'scale(1.3)'
                 }}
               />
             </div>

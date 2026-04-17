@@ -5,9 +5,9 @@ const Gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   
   const images = [
+    'https://customer-assets.emergentagent.com/job_profile-portal-52/artifacts/5868alhn_Internship%20Group%20Photo.jpg',
     'https://customer-assets.emergentagent.com/job_profile-portal-52/artifacts/yn1x33up_internship%20handshake%20wade.jpg',
-    'https://customer-assets.emergentagent.com/job_profile-portal-52/artifacts/5kuwq5wc_internship%20photo%20with%20wade.jpg',
-    'https://customer-assets.emergentagent.com/job_profile-portal-52/artifacts/5868alhn_Internship%20Group%20Photo.jpg'
+    'https://customer-assets.emergentagent.com/job_profile-portal-52/artifacts/5kuwq5wc_internship%20photo%20with%20wade.jpg'
   ];
 
   const nextSlide = () => {
@@ -37,7 +37,7 @@ const Gallery = () => {
           {/* Slideshow Container */}
           <div className="relative">
             {/* Image */}
-            <div className="w-full aspect-video bg-black rounded-lg overflow-hidden" style={{ backgroundColor: '#05080F' }}>
+            <div className="w-full aspect-video overflow-hidden">
               <img
                 src={images[currentIndex]}
                 alt={`Gallery image ${currentIndex + 1}`}
@@ -45,24 +45,24 @@ const Gallery = () => {
               />
             </div>
             
-            {/* Left Arrow */}
+            {/* Left Arrow - larger and more transparent */}
             <button
               onClick={prevSlide}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 p-3 rounded-full transition-all duration-300 hover:scale-110"
-              style={{ backgroundColor: 'rgba(130, 172, 135, 0.9)' }}
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 p-2 transition-all duration-300 hover:scale-110"
+              style={{ backgroundColor: 'transparent' }}
               aria-label="Previous image"
             >
-              <ChevronLeft size={32} color="#F8F9FA" />
+              <ChevronLeft size={48} color="#F8F9FA" style={{ opacity: 0.6 }} className="hover:opacity-100 transition-opacity duration-300" />
             </button>
             
-            {/* Right Arrow */}
+            {/* Right Arrow - larger and more transparent */}
             <button
               onClick={nextSlide}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 p-3 rounded-full transition-all duration-300 hover:scale-110"
-              style={{ backgroundColor: 'rgba(130, 172, 135, 0.9)' }}
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 p-2 transition-all duration-300 hover:scale-110"
+              style={{ backgroundColor: 'transparent' }}
               aria-label="Next image"
             >
-              <ChevronRight size={32} color="#F8F9FA" />
+              <ChevronRight size={48} color="#F8F9FA" style={{ opacity: 0.6 }} className="hover:opacity-100 transition-opacity duration-300" />
             </button>
             
             {/* Dots Indicator */}

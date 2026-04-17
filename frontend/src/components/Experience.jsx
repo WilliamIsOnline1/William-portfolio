@@ -12,7 +12,7 @@ const Experience = ({ experiences, skills }) => {
             style={{
               color: '#F8F9FA',
               fontFamily: 'Inter, sans-serif',
-              textShadow: '0 0 30px rgba(255, 255, 255, 0.5), 0 0 60px rgba(90, 122, 138, 0.3)'
+              textShadow: '0 0 30px rgba(248, 249, 250, 0.5), 0 0 60px rgba(90, 122, 138, 0.3)'
             }}
           >
             Experience
@@ -69,14 +69,14 @@ const Experience = ({ experiences, skills }) => {
             ))}
           </div>
           
-          {/* Skills Section */}
+          {/* Skills Section - more intentional with fewer skills */}
           <div className="mt-16">
             <h3
               className="text-3xl font-bold mb-8 text-center"
               style={{
                 color: '#F8F9FA',
                 fontFamily: 'Inter, sans-serif',
-                textShadow: '0 0 20px rgba(255, 255, 255, 0.4)'
+                textShadow: '0 0 20px rgba(248, 249, 250, 0.4)'
               }}
             >
               Skills
@@ -87,7 +87,7 @@ const Experience = ({ experiences, skills }) => {
                   Technical
                 </h4>
                 <div className="flex flex-wrap gap-2">
-                  {skills.technical.map((skill, index) => (
+                  {['Nutrition Analysis', 'Food Safety Protocols', 'Customer Relations'].map((skill, index) => (
                     <span
                       key={index}
                       className="px-3 py-1.5 text-sm rounded-md transition-all duration-300 hover:scale-105"
@@ -104,7 +104,7 @@ const Experience = ({ experiences, skills }) => {
                   Software & Tools
                 </h4>
                 <div className="flex flex-wrap gap-2">
-                  {skills.software.map((skill, index) => (
+                  {['Microsoft Office Suite', 'Point of Sale Systems'].map((skill, index) => (
                     <span
                       key={index}
                       className="px-3 py-1.5 text-sm rounded-md transition-all duration-300 hover:scale-105"
@@ -121,7 +121,7 @@ const Experience = ({ experiences, skills }) => {
                   Soft Skills
                 </h4>
                 <div className="flex flex-wrap gap-2">
-                  {skills.soft.map((skill, index) => (
+                  {['Leadership', 'Communication', 'Problem Solving', 'Time Management'].map((skill, index) => (
                     <span
                       key={index}
                       className="px-3 py-1.5 text-sm rounded-md transition-all duration-300 hover:scale-105"
