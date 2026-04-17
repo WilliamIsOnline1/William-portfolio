@@ -18,10 +18,15 @@ const Hero = ({ data }) => {
     <section id="hero" className="min-h-screen flex items-center justify-center" style={{ backgroundColor: '#05080F' }}>
       <div className="container mx-auto px-6 py-32">
         <div className="max-w-3xl mx-auto text-center">
-          {/* Simple Food Science Icon */}
+          {/* Professional Photo */}
           <div className="mb-8">
-            <div className="w-48 h-48 mx-auto rounded-full flex items-center justify-center transition-all duration-500 hover:scale-105" style={{ backgroundColor: '#0D1219', border: '3px solid #82AC87', boxShadow: '0 0 40px rgba(122, 158, 126, 0.2)' }}>
-              <Beaker size={80} style={{ color: '#82AC87' }} strokeWidth={1.5} />
+            <div className="w-48 h-48 mx-auto rounded-full overflow-hidden transition-all duration-500 hover:scale-105" style={{ border: '3px solid #82AC87', boxShadow: '0 0 40px rgba(122, 158, 126, 0.2)' }}>
+              <img
+                src="https://customer-assets.emergentagent.com/job_profile-portal-52/artifacts/6nzux661_professional%20photo%20%282%29.jpg"
+                alt="William Davis"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: 'center center' }}
+              />
             </div>
           </div>
           
