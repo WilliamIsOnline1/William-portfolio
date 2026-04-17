@@ -10,7 +10,7 @@ const Footer = ({ personalData }) => {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div>
-              <h3 className="text-xl font-bold mb-2" style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif' }}>
+              <h3 className="text-xl font-bold mb-2" style={{ color: '#F8F9FA', fontFamily: 'Inter, sans-serif' }}>
                 {personalData.name}
               </h3>
               <p className="text-sm" style={{ color: '#C1C9D2', fontFamily: 'Inter, sans-serif', opacity: 0.7 }}>

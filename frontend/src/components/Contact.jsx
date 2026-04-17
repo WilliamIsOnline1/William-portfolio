@@ -10,7 +10,7 @@ const Contact = ({ personalInfo }) => {
           <h2
             className="text-7xl md:text-8xl font-bold mb-6 transition-all duration-500"
             style={{
-              color: '#FFFFFF',
+              color: '#F8F9FA',
               fontFamily: 'Inter, sans-serif',
               textShadow: '0 0 40px rgba(255, 255, 255, 0.8), 0 0 80px rgba(122, 158, 126, 0.5), 0 0 120px rgba(90, 122, 138, 0.3)'
             }}
@@ -40,7 +40,7 @@ const Contact = ({ personalInfo }) => {
               </div>
               <div className="text-left">
                 <p className="text-sm mb-1" style={{ color: '#648CB0', fontFamily: 'Inter, sans-serif' }}>Email</p>
-                <p className="font-medium text-xl" style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif' }}>
+                <p className="font-medium text-xl" style={{ color: '#F8F9FA', fontFamily: 'Inter, sans-serif' }}>
                   {personalInfo.email}
                 </p>
               </div>

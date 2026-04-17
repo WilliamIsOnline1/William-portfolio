@@ -10,7 +10,7 @@ const Experience = ({ experiences, skills }) => {
           <h2
             className="text-5xl font-bold mb-6 text-center transition-all duration-500"
             style={{
-              color: '#FFFFFF',
+              color: '#F8F9FA',
               fontFamily: 'Inter, sans-serif',
               textShadow: '0 0 30px rgba(255, 255, 255, 0.5), 0 0 60px rgba(90, 122, 138, 0.3)'
             }}
@@ -28,20 +28,20 @@ const Experience = ({ experiences, skills }) => {
               >
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-lg transition-all duration-300" style={{ backgroundColor: '#648CB0' }}>
-                    <Briefcase size={24} color="#FFFFFF" />
+                    <Briefcase size={24} color="#F8F9FA" />
                   </div>
                   
                   <div className="flex-1">
                     <div className="flex flex-wrap justify-between items-start mb-3">
                       <h3
                         className="text-2xl font-bold transition-all duration-300"
-                        style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif' }}
+                        style={{ color: '#F8F9FA', fontFamily: 'Inter, sans-serif' }}
                       >
                         {exp.position}
                       </h3>
                       <span
                         className="text-sm font-medium px-4 py-1.5 rounded-full transition-all duration-300"
-                        style={{ backgroundColor: '#8B7358', color: '#FFFFFF', fontFamily: 'Inter, sans-serif', fontWeight: '600' }}
+                        style={{ backgroundColor: '#8B7358', color: '#F8F9FA', fontFamily: 'Inter, sans-serif', fontWeight: '600' }}
                       >
                         {exp.duration}
                       </span>
@@ -74,7 +74,7 @@ const Experience = ({ experiences, skills }) => {
             <h3
               className="text-3xl font-bold mb-8 text-center"
               style={{
-                color: '#FFFFFF',
+                color: '#F8F9FA',
                 fontFamily: 'Inter, sans-serif',
                 textShadow: '0 0 20px rgba(255, 255, 255, 0.4)'
               }}
@@ -91,7 +91,7 @@ const Experience = ({ experiences, skills }) => {
                     <span
                       key={index}
                       className="px-3 py-1.5 text-sm rounded-md transition-all duration-300 hover:scale-105"
-                      style={{ backgroundColor: '#0D1219', color: '#FFFFFF', border: '1px solid #82AC87', fontFamily: 'Inter, sans-serif' }}
+                      style={{ backgroundColor: '#0D1219', color: '#F8F9FA', border: '1px solid #82AC87', fontFamily: 'Inter, sans-serif' }}
                     >
                       {skill}
                     </span>
@@ -108,7 +108,7 @@ const Experience = ({ experiences, skills }) => {
                     <span
                       key={index}
                       className="px-3 py-1.5 text-sm rounded-md transition-all duration-300 hover:scale-105"
-                      style={{ backgroundColor: '#0D1219', color: '#FFFFFF', border: '1px solid #648CB0', fontFamily: 'Inter, sans-serif' }}
+                      style={{ backgroundColor: '#0D1219', color: '#F8F9FA', border: '1px solid #648CB0', fontFamily: 'Inter, sans-serif' }}
                     >
                       {skill}
                     </span>
@@ -125,7 +125,7 @@ const Experience = ({ experiences, skills }) => {
                     <span
                       key={index}
                       className="px-3 py-1.5 text-sm rounded-md transition-all duration-300 hover:scale-105"
-                      style={{ backgroundColor: '#0D1219', color: '#FFFFFF', border: '1px solid #8B7358', fontFamily: 'Inter, sans-serif' }}
+                      style={{ backgroundColor: '#0D1219', color: '#F8F9FA', border: '1px solid #8B7358', fontFamily: 'Inter, sans-serif' }}
                     >
                       {skill}
                     </span>

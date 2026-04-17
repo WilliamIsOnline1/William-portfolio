@@ -10,7 +10,7 @@ const Education = ({ education }) => {
           <h2
             className="text-5xl font-bold mb-6 text-center transition-all duration-500"
             style={{
-              color: '#FFFFFF',
+              color: '#F8F9FA',
               fontFamily: 'Inter, sans-serif',
               textShadow: '0 0 30px rgba(255, 255, 255, 0.5), 0 0 60px rgba(122, 158, 126, 0.3)'
             }}
@@ -35,13 +35,13 @@ const Education = ({ education }) => {
                     <div className="flex flex-wrap justify-between items-start mb-3">
                       <h3
                         className="text-2xl font-bold transition-all duration-300"
-                        style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif' }}
+                        style={{ color: '#F8F9FA', fontFamily: 'Inter, sans-serif' }}
                       >
                         {edu.degree}
                       </h3>
                       <span
                         className="text-sm font-medium px-4 py-1.5 rounded-full transition-all duration-300"
-                        style={{ backgroundColor: '#8B7358', color: '#FFFFFF', fontFamily: 'Inter, sans-serif', fontWeight: '600' }}
+                        style={{ backgroundColor: '#8B7358', color: '#F8F9FA', fontFamily: 'Inter, sans-serif', fontWeight: '600' }}
                       >
                         {edu.duration}
                       </span>

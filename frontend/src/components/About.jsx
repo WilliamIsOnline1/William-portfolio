@@ -8,9 +8,9 @@ const About = ({ content }) => {
           <h2
             className="text-5xl font-bold mb-6 text-center transition-all duration-500"
             style={{
-              color: '#FFFFFF',
+              color: '#F8F9FA',
               fontFamily: 'Inter, sans-serif',
-              textShadow: '0 0 30px rgba(255, 255, 255, 0.5), 0 0 60px rgba(122, 158, 126, 0.3)'
+              textShadow: '0 0 30px rgba(248, 249, 250, 0.5), 0 0 60px rgba(130, 172, 135, 0.3)'
             }}
           >
             About Me
@@ -23,6 +23,22 @@ const About = ({ content }) => {
           >
             {content}
           </p>
+          
+          {/* Small photo bubble at bottom */}
+          <div className="flex justify-center mt-12">
+            <div className="relative">
+              <img
+                src="https://customer-assets.emergentagent.com/job_profile-portal-52/artifacts/4vjvjvn6_trees%20with%20orange%20shirt.jpg"
+                alt="William Davis"
+                className="w-32 h-32 rounded-full object-cover border-3 transition-all duration-500 hover:scale-105"
+                style={{
+                  borderColor: '#82AC87',
+                  boxShadow: '0 0 20px rgba(130, 172, 135, 0.3)',
+                  objectPosition: 'center 30%'
+                }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

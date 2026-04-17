@@ -10,12 +10,12 @@ const Awards = ({ awards }) => {
           <h2
             className="text-5xl font-bold mb-6 text-center transition-all duration-500"
             style={{
-              color: '#FFFFFF',
+              color: '#F8F9FA',
               fontFamily: 'Inter, sans-serif',
-              textShadow: '0 0 30px rgba(255, 255, 255, 0.5), 0 0 60px rgba(122, 104, 80, 0.3)'
+              textShadow: '0 0 30px rgba(248, 249, 250, 0.5), 0 0 60px rgba(139, 115, 88, 0.3)'
             }}
           >
-            Notable Awards
+            Awards
           </h2>
           <div className="w-24 h-1 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #82AC87, #8B7358)' }}></div>
           
@@ -25,7 +25,7 @@ const Awards = ({ awards }) => {
                 <div className="flex items-start gap-4">
                   <Medal size={28} className="mt-1 flex-shrink-0" style={{ color: '#8B7358' }} />
                   <div>
-                    <h4 className="text-xl font-bold mb-2" style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif' }}>
+                    <h4 className="text-xl font-bold mb-2" style={{ color: '#F8F9FA', fontFamily: 'Inter, sans-serif' }}>
                       {award.title}
                     </h4>
                     <p className="text-base mb-1" style={{ color: '#82AC87', fontFamily: 'Inter, sans-serif' }}>

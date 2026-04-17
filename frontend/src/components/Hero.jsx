@@ -35,7 +35,7 @@ const Hero = ({ data }) => {
           <h1
             className="text-6xl md:text-7xl font-bold mb-6 transition-all duration-500"
             style={{
-              color: '#FFFFFF',
+              color: '#F8F9FA',
               fontFamily: 'Inter, sans-serif',
               letterSpacing: '-0.02em',
               textShadow: '0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(122, 158, 126, 0.3)'
@@ -88,7 +88,7 @@ const Hero = ({ data }) => {
               className="px-8 py-6 text-base font-medium rounded-lg transition-all duration-500 hover:shadow-xl hover:scale-105"
               style={{
                 backgroundColor: '#8B7358',
-                color: '#FFFFFF',
+                color: '#F8F9FA',
                 border: 'none',
                 fontFamily: 'Inter, sans-serif',
                 fontWeight: '600'

@@ -40,14 +40,14 @@ const Header = ({ data }) => {
           >
             <h3
               className="text-lg font-semibold transition-all duration-500"
-              style={{ color: '#FFFFFF', fontFamily: 'Inter, sans-serif' }}
+              style={{ color: '#F8F9FA', fontFamily: 'Inter, sans-serif' }}
             >
               {data.name}
             </h3>
           </div>
 
           <nav className="hidden md:flex items-center gap-8">
-            {['About', 'Experience', 'Education', 'Awards', 'Contact'].map((item) => (
+            {['About', 'Experience', 'Education', 'Gallery', 'Awards', 'Links', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
@@ -62,7 +62,7 @@ const Header = ({ data }) => {
           <button
             className="md:hidden p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            style={{ color: '#FFFFFF' }}
+            style={{ color: '#F8F9FA' }}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -70,7 +70,7 @@ const Header = ({ data }) => {
 
         {isMobileMenuOpen && (
           <nav className="md:hidden mt-4 py-4 space-y-3">
-            {['About', 'Experience', 'Education', 'Awards', 'Contact'].map((item) => (
+            {['About', 'Experience', 'Education', 'Gallery', 'Awards', 'Links', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
