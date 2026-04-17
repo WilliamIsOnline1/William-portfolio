@@ -36,12 +36,14 @@ const Gallery = () => {
           
           {/* Slideshow Container */}
           <div className="relative">
-            {/* Image */}
+            {/* Image with smooth fade transition */}
             <div className="w-full aspect-video overflow-hidden">
               <img
+                key={currentIndex}
                 src={images[currentIndex]}
                 alt={`Gallery image ${currentIndex + 1}`}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain transition-opacity duration-700 ease-in-out"
+                style={{ animation: 'fadeIn 0.7s ease-in-out' }}
               />
             </div>
             
