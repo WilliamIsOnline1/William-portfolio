@@ -99,24 +99,26 @@ const Hero = ({ data }) => {
           <div className="flex flex-wrap justify-center gap-4">
             <Button
               onClick={() => scrollToSection('about')}
-              className="px-8 py-6 text-base font-medium rounded-lg transition-all duration-500 hover:shadow-xl hover:scale-105"
+              className="px-8 py-6 text-base font-bold rounded-lg transition-all duration-500 hover:shadow-xl hover:scale-105"
               style={{
                 backgroundColor: 'transparent',
                 color: '#82AC87',
-                border: '2px solid #82AC87',
-                fontFamily: 'Inter, sans-serif'
+                border: '3px solid #82AC87',
+                fontFamily: 'Inter, sans-serif',
+                fontWeight: '700'
               }}
             >
               About
             </Button>
             <Button
               onClick={() => scrollToSection('experience')}
-              className="px-8 py-6 text-base font-medium rounded-lg transition-all duration-500 hover:shadow-xl hover:scale-105"
+              className="px-8 py-6 text-base font-bold rounded-lg transition-all duration-500 hover:shadow-xl hover:scale-105"
               style={{
                 backgroundColor: 'transparent',
                 color: '#648CB0',
-                border: '2px solid #648CB0',
-                fontFamily: 'Inter, sans-serif'
+                border: '3px solid #648CB0',
+                fontFamily: 'Inter, sans-serif',
+                fontWeight: '700'
               }}
             >
               Experience

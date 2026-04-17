@@ -60,7 +60,7 @@ button:hover, a:hover {
 }
 
 .laser-blink {
-  animation: laserBlink 2s ease-in-out infinite;
+  animation: laserBlink 3.5s ease-in-out infinite;
 }
 
 /* Minimal ambient background animation - More visible */
