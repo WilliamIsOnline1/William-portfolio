@@ -82,6 +82,20 @@ const Hero = ({ data }) => {
             {data.tagline}
           </p>
           
+          {/* Based in location with blinking green dot */}
+          <div className="flex items-center justify-center gap-3 mb-12">
+            <div 
+              className="w-2.5 h-2.5 rounded-full laser-blink"
+              style={{ backgroundColor: '#00FF41', boxShadow: '0 0 10px #00FF41' }}
+            ></div>
+            <p
+              className="text-base"
+              style={{ color: '#C1C9D2', fontFamily: 'Inter, sans-serif', fontWeight: '400' }}
+            >
+              Based in <span style={{ color: '#F8F9FA', fontWeight: '500' }}>Baton Rouge, Louisiana</span>
+            </p>
+          </div>
+          
           <div className="flex flex-wrap justify-center gap-4">
             <Button
               onClick={() => scrollToSection('about')}

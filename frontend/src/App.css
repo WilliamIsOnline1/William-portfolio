@@ -47,6 +47,22 @@ button:hover, a:hover {
   animation: fadeIn 1s ease-out forwards;
 }
 
+/* Laser green blinking dot animation */
+@keyframes laserBlink {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 10px #00FF41, 0 0 20px #00FF41;
+  }
+  50% {
+    opacity: 0.3;
+    box-shadow: 0 0 5px #00FF41;
+  }
+}
+
+.laser-blink {
+  animation: laserBlink 2s ease-in-out infinite;
+}
+
 /* Minimal ambient background animation - More visible */
 @keyframes ambientFloat {
   0%, 100% {
