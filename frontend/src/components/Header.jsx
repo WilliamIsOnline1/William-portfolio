@@ -57,9 +57,9 @@ const Header = ({ data }) => {
                 onClick={() => scrollToSection(item.toLowerCase())}
                 className="nav-link text-sm font-medium transition-all duration-300 hover:scale-105"
                 style={{ 
-                  color: '#6B7280',
+                  color: '#4B5563',
                   fontFamily: 'Inter, sans-serif',
-                  textShadow: '0 0 8px rgba(192, 192, 192, 0.4), 0 1px 2px rgba(255, 255, 255, 0.3)',
+                  textShadow: '0 0 4px rgba(156, 163, 175, 0.2), 0 1px 1px rgba(209, 213, 219, 0.15)',
                   fontWeight: '600'
                 }}
               >

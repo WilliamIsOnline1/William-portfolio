@@ -47,10 +47,10 @@ button:hover, a:hover {
   animation: fadeIn 1s ease-out forwards;
 }
 
-/* Navigation bar silver shine effect */
+/* Navigation bar silver shine effect - dimmed version */
 .nav-link {
   position: relative;
-  background: linear-gradient(135deg, #6B7280 0%, #9CA3AF 50%, #6B7280 100%);
+  background: linear-gradient(135deg, #4B5563 0%, #6B7280 50%, #4B5563 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -58,7 +58,7 @@ button:hover, a:hover {
 }
 
 .nav-link:hover {
-  animation: shimmer 2s linear infinite;
+  animation: shimmer 2.5s linear infinite;
 }
 
 @keyframes shimmer {
