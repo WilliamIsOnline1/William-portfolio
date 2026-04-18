@@ -7,7 +7,7 @@ export const resumeData = {
     phone: "+1 (555) 123-4567",
     location: "Baton Rouge, Louisiana",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-    tagline: "Passionate about food innovation, nutrition, and creating meaningful connections between food science and community wellbeing."
+    tagline: "Food science student exploring innovation, research + industry opportunities."
   },
   
   about: "I am a dedicated student at Louisiana State University pursuing a Bachelor of Science in Food, Nutrition, and Society. My academic journey combines scientific understanding with real-world application, from chemistry and microbiology to lifecycle nutrition. Beyond academics, I've demonstrated leadership in retail operations and studio management, while earning national recognition for culinary innovation. I'm committed to bridging the gap between food science, nutrition, and community impact.",
