@@ -11,7 +11,7 @@ const Hero = ({ data }) => {
   };
 
   const handleDownloadResume = () => {
-    window.open('/William_Davis_Resume.pdf', '_blank');
+    window.open('https://customer-assets.emergentagent.com/job_profile-portal-52/artifacts/yes6l12q_William%20Davis--Official%20Resume.docx%20%283%29.pdf', '_blank');
   };
 
   return (
