@@ -41,11 +41,11 @@ const Links = () => {
   ];
 
   return (
-    <section id="links" className="py-24 relative ambient-bg section-blend-top section-blend-bottom" style={{ backgroundColor: '#0D1219' }}>
+    <section id="links" className="py-20 relative ambient-bg section-blend-top section-blend-bottom" style={{ backgroundColor: '#0D1219' }}>
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2
-            className="text-5xl font-bold mb-6 text-center transition-all duration-500"
+            className="text-4xl font-bold mb-4 text-center transition-all duration-500"
             style={{
               color: '#F8F9FA',
               fontFamily: 'Inter, sans-serif',
@@ -54,10 +54,10 @@ const Links = () => {
           >
             In The News
           </h2>
-          <div className="w-24 h-1 mx-auto mb-12 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #82AC87, #648CB0)' }}></div>
+          <div className="w-20 h-1 mx-auto mb-10 transition-all duration-500" style={{ background: 'linear-gradient(90deg, #82AC87, #648CB0)' }}></div>
           
-          {/* Condensed grid layout */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {/* Extra condensed grid layout */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
             {links.map((link) => (
               <a
                 key={link.id}
@@ -67,19 +67,19 @@ const Links = () => {
                 className="block group"
               >
                 <div
-                  className="p-4 rounded-lg transition-all duration-300 hover:scale-105 h-full border-l-4"
+                  className="p-3 rounded-md transition-all duration-300 hover:scale-105 h-full border-l-3"
                   style={{ 
                     backgroundColor: '#05080F',
                     borderLeftColor: link.color
                   }}
                 >
-                  <div className="flex items-start gap-3">
-                    <ExternalLink size={20} className="mt-1 flex-shrink-0 transition-transform duration-300 group-hover:translate-x-1" style={{ color: link.color }} />
+                  <div className="flex items-start gap-2">
+                    <ExternalLink size={16} className="mt-0.5 flex-shrink-0 transition-transform duration-300 group-hover:translate-x-1" style={{ color: link.color }} />
                     <div>
-                      <h3 className="text-base font-semibold mb-1 transition-all duration-300" style={{ color: '#F8F9FA', fontFamily: 'Inter, sans-serif', lineHeight: '1.3' }}>
+                      <h3 className="text-sm font-semibold mb-0.5 transition-all duration-300" style={{ color: '#F8F9FA', fontFamily: 'Inter, sans-serif', lineHeight: '1.3' }}>
                         {link.title}
                       </h3>
-                      <p className="text-xs" style={{ color: '#9CA3AF', fontFamily: 'Inter, sans-serif' }}>
+                      <p className="text-xs" style={{ color: '#6B7280', fontFamily: 'Inter, sans-serif' }}>
                         {link.source}
                       </p>
                     </div>

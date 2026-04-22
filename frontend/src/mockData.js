@@ -3,7 +3,7 @@ export const resumeData = {
   personal: {
     name: "William Davis",
     title: "Food, Nutrition, and Society Student",
-    email: "william.foodsci83@gmail.com",
+    email: "williamonlinehq@gmail.com",
     phone: "+1 (555) 123-4567",
     location: "Baton Rouge, Louisiana",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
